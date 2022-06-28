@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<link rel="stylesheet" type="text/css" href="css/ipages.min.css">
+<style>
+body,html {margin:0;padding:0}
+body {background:#fff;font-family:Arial, Helvetica, sans-serif;font-size:14px;text-align:center;}
+@media (min-width:320px) {
+#flipbook{height:100%;width:100%}
+.ipgs-theme-default, .ipgs-icon-prev,.ipgs-icon-next,.ipgs-icon-optional,.ipgs-icon-outline,.ipgs-icon-prev,.ipgs-icon-share,.ipgs-icon-sound,.ipgs-icon-zoom-default,.ipgs-icon-gotofirst,.ipgs-icon-gotolast, .ipgs-icon-prev{background-size:25px 25px}
+.ipgs-toolbar{min-width:320px}
+}
+@media (min-width:1100px) {
+#flipbook{width:50%;margin:0 auto}
+.ipgs-theme-default, .ipgs-icon-prev,.ipgs-icon-next,.ipgs-icon-optional,.ipgs-icon-outline,.ipgs-icon-prev,.ipgs-icon-share,.ipgs-icon-sound,.ipgs-icon-zoom-default,.ipgs-icon-gotofirst,.ipgs-icon-gotolast, .ipgs-icon-prev{background-size:25px 25px}
+}
+</style>
+</head>
+<body>
+<div style="background:#666;height:100%;margin:-6px 0"><p style="color:#fff;margin:3px 0;padding:8px 0">Curso ENS Sacramentos</p></div>
+<div id="flipbook"></div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/pdf.min.js"></script>
+<script type="text/javascript" src="js/jquery.ipages.min.js"></script>
+<script>
+$(document).ready(function() {
+	var options = {
+		bookEngine: 'OnePageFlip',
+		containerHeight:'100%',
+		responsive:true,
+		autoFit:true,
+		autoHeight:true,
+		padding:{top:46,left:0,right:0,bottom:0},
+		
+		pdfUrl: 'https://ensbr.com/app/cursos/sacramentos-pt.pdf',
+		pdfAutoCreatePages: true,
+		pdfBookSizeFromDocument:true,
+		zoom:1,
+		
+		toolbarControls: [
+			{type:'share',        active:false},
+			{type:'sound',        active:false},
+			{type:'outline',      active:true},
+			{type:'thumbnails',   active:true},
+			{type:'gotofirst',    active:true},
+			{type:'prev',         active:true},
+			{type:'pagenumber',   active:true},
+			{type:'next',         active:true},
+			{type:'gotolast',     active:true},
+			{type:'zoom-in',      active:true},
+			{type:'zoom-out',     active:true},
+			{type:'zoom-default', active:true},
+			{type:'optional',     active:false},
+			{type:'download',     active:false},
+			{type:'fullscreen',   active:false},
+		],
+		
+		bookmarks: [
+			//{text:'Links', link:'', folded: false, bookmarks:[ {text:'Acervo', link:'https://www.1registrodedistribuicao.com.br/acervo/', target:'blank'}, ]},
+{text:'NOTA IMPORTANTE', link:'4'},
+{text:'OBJETIVOS DO ALBERGUE', link:'5'},
+{text:'INTRODUÇÃO', link:'6'},
+{text:'MESA 1: BREVE HISTÓRIA DO DESENVOLVIMENTO', link:'9'},
+{text:'DOS SACRAMENTOS', link:'9'},
+{text:'OS SACRAMENTOS NA HISTÓRIA DA IGREJA', link:'9'},
+{text:'O TEMPO FUNDADOR', link:'9'},
+{text:'DA ORIGEM DOS SACRAMENTOS', link:'14'},
+{text:'RAÍZES BÍBLICAS E JUDAICAS DOS SACRAMENTOS', link:'14'},
+{text:'MESA 2: FUNDAMENTOS DA DISCIPLINA SACRAMENTÁRIA', link:'16'},
+{text:'JESUS CRISTO SACRAMENTO DO PAI', link:'17'},
+{text:'A IGREJA, SACRAMENTO DO CRISTO', link:'20'},
+{text:'OS SACRAMENTOS DA IGREJA', link:'25'},
+{text:'MESA 3: FÉ, RITOS, SÍMBOLOS, MEMORIAL', link:'31'},
+{text:'A FÉ', link:'31'},
+{text:'AS DIVERSAS DIMENSÕES DO SÍMBOLO SACRAMENTAL', link:'31'},
+{text:'SÍMBOLOS, RITOS E SACRAMENTOS', link:'38'},
+{text:'O MEMORIAL', link:'39'},
+{text:'MESA 4: BREVE APRESENTAÇÃO DOS SACRAMENTOS HOJE', link:'41'},
+{text:'A EUCARISTIA', link:'41'},
+{text:'MESA 5: BREVE APRESENTAÇÃO DOS SACRAMENTOS HOJE (cont.)', link:'45'},
+{text:'OS SACRAMENTOS DA INICIAÇÃO CRISTÃ: BATISMO, CONFIRMAÇÃO, COMUNHÃO', link:'45'},
+{text:'EUCARÍSTICA', link:'45'},
+{text:'MESA 6: BREVE APRESENTAÇÃO DOS SACRAMENTOS HOJE (cont.)', link:'55'},
+{text:'OS SACRAMENTOS DE CURA: RECONCILIAÇÃO E UNÇÃO DOS EMFERMOS', link:'55'},
+{text:'MESA 7: BREVE APRESENTAÇÃO DOS SACRAMENTOS HOJE (cont.)', link:'64'},
+{text:'OS SACRAMENTOS A SERVIÇO DA COMUNHÃO: ORDEM', link:'64'},
+{text:'MESA 8: BREVE APRESENTAÇÃO DOS SACRAMENTOS HOJE (cont.)', link:'70'},
+{text:'OS SACRAMENTOS A SERVIÇO DA COMUNHÃO: MATRIMÔNIO', link:'70'},
+{text:'CONCLUSÃO', link:'85'},
+{text:'JESUS, PALAVRA DE DEUS', link:'85'},
+{text:'PALAVRA E SACRAMENTO', link:'85'},
+{text:'BIBLIOGRAFIA', link:'88'},
+		],
+	};
+	
+	$('#flipbook').ipages(options);
+	
+	// Events
+	$('#flipbook').on('ipages:ready', function(e, plugin) {
+		console.log('event:ready');
+	});
+	
+	$('#flipbook').on('ipages:showpage', function(e, plugin, page) {
+		console.log('event:showpage [' + page + ']');
+	});
+	
+	$('#flipbook').on('ipages:hidepage', function(e, plugin, page) {
+		console.log('event:hidepage [' + page + ']');
+	});
+});
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+<meta charset="utf-8">
+<title>Cursos | ENS app</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="../css/normalize.css">
+<link rel="stylesheet" href="../css/hot.css">
+<link rel="stylesheet" href="../css/aos.css">
+<script src="../jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<div id="preloader"><div class="inner"><div class="bolas"><div></div><div></div><div></div></div></div></div>
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="twelve columns" style="margin-top:6%">
+            <img src="../img/ens-logo-br.svg" style="width:70px;float:left;margin:13px 15px 0 50px" data-aos="fade-up"><h2 data-aos="fade-down" data-aos-delay="220">Cursos <b>ENS</b></h2>
+        </div>
+    </div>
+    <div class="row" style="padding:0px 15px" align="center">
+        <a href="antigo-testamento.htm" target="_top"><div class="curso" data-aos="fade-right"><h4>Curso ENS <b>Antigo Testamento</b></h4></div></a>
+        <a href="novo-testamento.htm" target="_top"><div class="curso" data-aos="fade-right"><h4>Curso ENS <b>Novo Testamento</b></h4></div></a>
+        <a href="cristologia.htm" target="_top"><div class="curso" data-aos="fade-right"><h4>Curso ENS <b>Cristologia</b></h4></div></a>
+        <a href="sacramentos.htm" target="_top"><div class="curso" data-aos="fade-right"><h4>Curso ENS <b>Sacramentos</b></h4></div></a>
+        <a href="eclesiologia.htm" target="_top"><div class="curso" data-aos="fade-right"><h4>Curso ENS <b>Eclesiologia</b></h4></div></a>
+        <a href="espiritualidade.htm" target="_top"><div class="curso" data-aos="fade-right"><h4>Curso ENS <b>Espiritualidade</b></h4></div></a>
+        <a href="liturgia.htm" target="_top"><div class="curso" data-aos="fade-right"><h4>Curso ENS <b>Liturgia</b></h4></div></a>
+        <a href="moral.htm" target="_top"><div class="curso" data-aos="fade-right"><h4>Curso ENS <b>Moral</b></h4></div></a>
+    </div>
+</div>
+
+
+
+
+<script src="pe-menu.js"></script>
+
+
+</body>
+</html>
