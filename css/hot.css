@@ -263,15 +263,15 @@ overflow-y:auto; overflow-x:hidden; opacity:0; transition:opacity 1s;}
 
 
 @media (min-width: 360px) {
-    .top {height:590px; top:120px}
-    .slide-menu-open img{width:20%; left:3.7%; bottom:18px} 
+.top {height:590px; top:120px}
+.slide-menu-open img{width:20%; left:3.7%; bottom:18px} 
 .curso{width:40.3%; height:60px; padding:12px 9px 25px 9px; margin:6px}
 }
 
 
 @media (min-width:412px) {
-    .slide-menu-open img{width:20%; left:3.7%; bottom:15px}
-    .curso{width:41%}
+.slide-menu-open img{width:20%; left:3.7%; bottom:15px}
+.curso{width:41%}
 }
 
 
