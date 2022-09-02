@@ -250,13 +250,13 @@ overflow-y:auto; overflow-x:hidden; opacity:0; transition:opacity 1s;}
 @media (min-width: 360px) {
 .top {height:590px; top:120px}
 .slide-menu-open img{width:20%; left:3.7%; bottom:18px} 
-.curso{width:40.3%; padding:14px 9px 14px 9px; margin:6px}
+.curso{width:40.4%; padding:14px 8px 14px 8px; margin:6px}
 }
 
 
 @media (min-width:412px) {
 .slide-menu-open img{width:20%; left:3.7%; bottom:15px}
-.curso{width:41%}
+.curso{width:42%}
 }
 
 
@@ -266,7 +266,7 @@ overflow-y:auto; overflow-x:hidden; opacity:0; transition:opacity 1s;}
 .side-menu-wrapper > ul > li > a {padding:8px 0; font-size:2rem}
 .offline{background-size:cover; background-position:center; height:135%}
 .offline h2{padding-top:19%}
-.curso{width:28.8%; height:55px; padding:22px 9px 25px 9px; margin:6px;}
+.curso{width:28.8%; height:58px; padding:20px 9px 25px 9px; margin:6px;}
 }
 
 
