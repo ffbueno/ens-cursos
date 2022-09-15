@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JDDMDTXKND"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JDDMDTXKND');
+</script>
+<meta charset="utf-8">
+<title>Cursos Sacerdotes | ENS app</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="../css/normalize.css">
+<link rel="stylesheet" href="../css/hot.css">
+<link rel="stylesheet" href="../css/aos.css">
+<script src="../js/jquery.min.js"></script>
+<style>
+#intro,.curso p{line-height:1.4em;font-size:0.75em; margin-bottom:5px}
+.curso h4{font-size:1.55em}.curso p{font-size:0.95em;}
+.curso{min-height:300px}
+@media (min-width:500px) {.curso{min-height:200px}}
+@media (min-width:800px) {.curso h4{font-size:1.8em}.curso p{font-size:1em;}}
+#login{display:none; margin:20px}
+#login .curso{width:84%; left:8%; padding:0;margin:0; min-height:auto; height:auto; position:relative}
+#login .curso form{padding:30px 20px 12px 20px}
+#login .curso h4{font-size:1.2em}
+</style>
+</head>
+<body>
+
+
+<div class="container-fluid" style="padding-bottom:100px">
+    <div class="row">
+        <div class="twelve columns" style="margin-top:6%">
+            <img src="../img/ens-logo-br.svg" style="width:70px;float:left;margin:13px 12px 0 14px" data-aos="fade-up"><h2 data-aos="fade-down" data-aos-delay="220">Cursos para Sacerdotes <b>ENS</b></h2>
+        </div>
+    </div>
+    <div class="row" style="padding:0px 15px" align="center" id="intro">
+        <p style="text-align:justify;padding:7px;margin-bottom:12px">Para ter acesso aos cursos, é necessário ser um SCE ou AE e estar cadastrado no Magnificat com CPF. Caso você seja SCE ou AE e não possua cadastro ou esteja desatualizado, peça ao seu CRS para realizar o seu cadastro e/ou atualizar o seu CPF.</p>
+        <a href="#" id="csp"><div class="curso" data-aos="fade-right"><h4>Papel do Conselheiro Espiritual nas Equipes de Nossa Senhora</h4><p>Ao aceitar o convite para ser Sacerdote Conselheiro Espiritual de uma Equipe de Nossa Senhora, o padre o faz por adesão pessoal e livre. </p></div></a>
+        <a href="#" id="cssce"><div class="curso" data-aos="fade-right"><h4>O que o SCE precisa saber sobre as ENS?</h4><p>O surgimento de um Movimento de casais, desejosos de se santificar no e pelo matrimônio, foi um grande acontecimento na Igreja: uma verdadeira revolução, a valorização do sacramento do matrimônio.</p></div></a>
+        <a href="#" id="csae"><div class="curso" data-aos="fade-right"><h4>O SCE e o AE na Equipe</h4><p>A participação e atuação próprias do Sacerdote Conselheiro Espiritual e do Acompanhante Espiritual nas suas Equipes.</p></div></a>
+        <a href="#" id="cscon"><div class="curso" data-aos="fade-right"><h4>Espiritualidade Conjugal</h4><p>A palavra Espiritualidade vem da palavra latina spiritus, que corresponde a pneuma na língua grega.</p></div></a>
+        <a href="#" id="csem"><div class="curso" data-aos="fade-right"><h4>Embasamento teológico das ENS</h4><p>Dos sete sacramentos da Igreja Católica, dois, a Ordem e o Matrimônio, são ordenados para a salvação de outrem através do serviço no amor que realizam.</p></div></a>
+        <a href="#" id="cssu"><div class="curso" data-aos="fade-right"><h4>Sugestões práticas para a pregação do Retiro</h4><p>O retiro anual é sempre oportunidade para o casal rever sua opção pelas Equipes de Nossa Senhora, bem como sua fidelidade aos compromissos assumidos.</p></div></a>
+    </div>
+    <div class="row" align="center" id="login">
+        <div class="curso">
+        <form id="frm-login" action="https://www.ens.org.br/vpj/forms/login.php" method="post">
+            <h4>Por favor, entre o seu CPF cadastrado para acesso aos cursos:</h4>
+            <input type="hidden" name="action" value="valida_senha">
+            <input type="tel" name="cpf" id="cpf" placeholder="Seu CPF" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'')" onBlur="validacpf(this)" minlength="11" maxlength="11" style="width:100%" required>
+            <div class="text-center"><button type="submit" class="button-primary">Entrar</button></div>
+        </form>
+        </div>
+        <h4 style="clear:both;padding-top:30px"><a href="#" id="back">&#171; voltar</a></h4>
+    </div>
+</div>
+
+
+
+<script src="../aos.js"></script><script>AOS.init({ duration:800 });</script>
+
+
+<script>
+$(document).ready(function(){
+$("#csp").click(function(){ //$('html').scrollTop(0); window.location.href = "index2.htm";
+    $("#intro").fadeToggle(80); $("#login").fadeToggle(80); });
+$("#cssce").click(function(){ $("#intro").fadeToggle(80); $("#login").fadeToggle(80); });
+$("#csae").click(function(){ $("#intro").fadeToggle(80); $("#login").fadeToggle(80); });
+$("#cscon").click(function(){ $("#intro").fadeToggle(80); $("#login").fadeToggle(80); });
+$("#csem").click(function(){ $("#intro").fadeToggle(80); $("#login").fadeToggle(80); });
+$("#cssu").click(function(){ $("#intro").fadeToggle(80); $("#login").fadeToggle(80); });
+$("#back").click(function(){ $("#intro").fadeToggle(80); $("#login").fadeToggle(80); });
+});
+</script>
+
+
+
+
+<script language="javascript">
+function validacpf(){
+if(valida_cpf(document.getElementById('cpf').value))
+	return true;//alert('CPF válido');
+else alert('CPF inválido, digite-o corretamente'); cpf.value = ""; }
+			
+function valida_cpf(cpf){
+  var numeros, digitos, soma, i, resultado, digitos_iguais;
+  digitos_iguais = 1;
+  if (cpf.length < 11)
+		return false;
+  for (i = 0; i < cpf.length - 1; i++)
+		if (cpf.charAt(i) != cpf.charAt(i + 1))
+			  {  digitos_iguais = 0;  break; }
+if (!digitos_iguais)
+		{ numeros = cpf.substring(0,9);
+		digitos = cpf.substring(9);
+		soma = 0;
+		for (i = 10; i > 1; i--)
+			  soma += numeros.charAt(10 - i) * i;
+		resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
+		if (resultado != digitos.charAt(0))
+			  return false;
+		numeros = cpf.substring(0,10);
+		soma = 0;
+		for (i = 11; i > 1; i--)
+			  soma += numeros.charAt(11 - i) * i;
+		resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
+		if (resultado != digitos.charAt(1))
+			  return false;
+		return true; }
+  else
+		return false; }
+</script>
+
+
+</body>
+</html>
