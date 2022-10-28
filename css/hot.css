@@ -261,7 +261,7 @@ input[type='checkbox'] {display:none;}
 .toggle:checked + .lbl-toggle {border-bottom-right-radius:0; border-bottom-left-radius:0;}
 .collapsible-content .content-inner {background:#fff; border-bottom-left-radius:10px; border-bottom-right-radius:10px; padding:2rem}
 .content-inner p, li {font-size:1.5rem; margin-bottom:1.4rem; padding-left:0; text-align:justify}
-.curso{width:auto; margin:20px 20px 0 20px; text-align:left; padding:2rem 1.2em 0 1.2em; box-shadow:0px 20px 20px 0px rgba(0,0,0,0.12); -moz-box-shadow:0px 20px 20px 0px rgba(0,0,0,0.12); -webkit-box-shadow:0px 20px 20px 0px rgba(0,0,0,0.12); background:#5b6fb0; color:#fff; float:none; border:0}
+.curso{width:auto; margin:20px 20px 0 20px; text-align:left; padding:2rem 1.2em 0 1.2em; box-shadow:0px 20px 20px 0px rgba(0,0,0,0.12); -moz-box-shadow:0px 20px 20px 0px rgba(0,0,0,0.12); -webkit-box-shadow:0px 20px 20px 0px rgba(0,0,0,0.12); background:#fff; color:#fff; float:none; border:0}
 
 }
 
