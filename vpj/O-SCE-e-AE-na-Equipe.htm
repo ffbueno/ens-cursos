@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JDDMDTXKND"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JDDMDTXKND');
+</script>
+<meta charset="utf-8">
+<title>Curso AE | O SCE e o AE na Equipe | ENS app</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="../css/normalize.css">
+<link rel="stylesheet" href="../css/hot.css">
+<link rel="stylesheet" href="../css/aos.css">
+<script src="../js/jquery.min.js"></script>
+<style>
+.lbl-toggle h4{padding:0; font-size:1.7rem; font-weight:400; text-transform:none; line-height:140%}
+input[type='checkbox'] {display:none;}
+.lbl-toggle {display:block; text-transform:uppercase; padding:1rem 0.7rem 0 1.4rem; color:#1c2f6e; background:#fff; cursor:pointer; border-radius:10px; transition:all 0.25s ease-out; margin:20px 20px 0 20px; box-shadow:rgba(15, 20, 31, 0.15) 0px 0px 18px 0px;}
+.lbl-toggle::after {content:' '; display:inline-block; vertical-align:middle; transition:transform .2s ease-out; margin:0 0 0 6px}
+.collapsible-content {max-height:0px; overflow:hidden; transition:max-height .15s ease-in-out; box-shadow:rgba(15, 20, 31, 0.15) 0px 0px 18px 0px; border-bottom-left-radius:10px; border-bottom-right-radius:10px; margin:0 20px 32px 20px;}
+.toggle:checked + .lbl-toggle + .collapsible-content {max-height:8250px; height:auto}
+.toggle:checked + .lbl-toggle {border-bottom-right-radius:0; border-bottom-left-radius:0;}
+.collapsible-content .content-inner {background:#fff; border-bottom-left-radius:10px; border-bottom-right-radius:10px; padding:2rem}
+.content-inner p, li {font-size:1.5rem; margin-bottom:1.4rem; padding-left:0; text-align:justify}
+.curso{width:auto; margin:20px 20px 0 20px; text-align:left; padding:2rem 1.2em 0 1.2em; box-shadow:0px 20px 20px 0px rgba(0,0,0,0.12); -moz-box-shadow:0px 20px 20px 0px rgba(0,0,0,0.12); -webkit-box-shadow:0px 20px 20px 0px rgba(0,0,0,0.12); background:#5b6fb0; color:#fff; float:none; border:0}
+
+.modal-window {position:fixed; background-color: rgba(255, 255, 255, 0.8); top:0; right:0; bottom:0; left:0; z-index:999999; visibility:visible; opacity:1; pointer-events:all; -webkit-transition: all 0.3s; transition: all 0.2s}
+.modal-window:target { visibility:visible; opacity: 1; pointer-events: auto;}
+.modal-window > div {max-width:250px; width:100%; padding:22px; position:absolute; top:40%; left:50%; -webkit-transform:translate(-50%, -50%);transform: translate(-50%, -50%); padding:2em; background:#ffffff; -webkit-box-shadow: 0px 0px 90px 0px rgba(0,0,0,0.26); -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.26); box-shadow: 0px 0px 90px 0px rgba(0,0,0,0.26); border-radius:6px}
+.modal-window div:not(:last-of-type) { margin-bottom: 15px;}
+</style>
+</head>
+<body>
+
+
+<div id="login" class="modal-window" data-aos="fade-up">
+    <div class="total">
+        <h4 style="margin:20px 0"><img src="../img/ens_logo01.svg" style="width:60px;margin:20px 10px -17px auto"><b>acessar cursos</b></h4>
+        <form action="" name="formCadastro" id="formCadastro" method="post" enctype="multipart/form-data" autocomplete="off" accept-charset="UTF-8">
+            <input class="u-full-width" type="tel" placeholder="Digite CPF" id="cpf" name="cpf" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'')" minlength="11" maxlength="11" required>
+            <input class="button-primary" value="Acessar" type="submit" name="submit" id="submit">
+        </form>
+    </div>
+</div>
+
+
+
+
+<div id="conteudo" style="display:none">
+
+
+<div class="container-fluid" style="padding-bottom:100px">
+    <div class="row">
+        <div class="twelve columns" align="center" style="padding:0 20px">
+            <img src="../img/ens_logo01.svg" style="width:80px;margin:40px auto -15px auto" data-aos="fade-up"><h2 data-aos="fade-down"><b>Curso</b> O SCE e o AE na Equipe</h2>
+        </div>
+    </div>
+    <div class="row" style="margin:0 auto 25px auto" align="center">
+       <div class="curso" data-aos="fade-right"><p>A participação e atuação próprias do Sacerdote Conselheiro Espiritual e do Acompanhante Espiritual nas suas Equipes</p></div>
+    </div>
+<div class="row">
+    <div class="twelve columns">
+           <div class="wrap-collapsible" data-aos="fade-down">
+  <input id="collapsible1" class="toggle" type="checkbox">
+  <label for="collapsible1" class="lbl-toggle"><h4>MÓDULO 1<br>Como Presbítero, como Conselheiro Espiritual e como Guia Espiritual</h4></label>
+<div class="collapsible-content"><div class="content-inner"><p>Os Estatutos da Equipes de Nossa Senhora afirmam que “Cada equipe deve contar com o concurso de um sacerdote”, e completa afirmando ainda que “Todos os planos de trabalho, com efeito, não podem substituir a contribuição doutrinária e espiritual do sacerdote” <a class="hint" href="https://equipes-notre-dame.com/pt/carta-das-equipas-de-nossa-senhora-1947-1977/">[1]</a>. Os Estatutos Canônicos das ENS também dizem que “Os sacerdotes trazem para as equipes a graça insubstituível de seu sacerdócio; não assumem responsabilidade de governo; é por essa razão que são chamados de Conselheiros Espirituais” <a class="hint" href="https://www.ens.org.br/o-movimento/decreto-de-reconhecimento">[2]</a>. Já foi afirmado que a presença de um SCE em cada equipe sempre foi querida, desde o início do Movimento, e se torna ainda mais importante porque significa o Cristo presente como cabeça da comunidade <a class="hint" href="https://www.ens.org.br/upl/arquivos/2017-01/14-o-sacerdote-conselheiro-espiritual.pdf">[3]</a>. É nessa pequena ecclesia - a equipe - que se reúne em nome de Cristo, o lugar aonde o sacerdote também se faz o representante de Cristo. “O sacerdote é, em meio dos homens, a presença de Jesus Cristo. Ele se situa como o Cristo, por causa de Cristo, com Cristo, entre Deus e nós” <a class="hint" href="#hint" title="" data-bs-original-title="Pe. CARRÉ, O verdadeiro rosto do padre. In: O Espirito e as Grandes Linhas do Movimento, 2014, p. 30, disponível em....">[4]</a>.</p>
+<p>O relacionamento do Sacerdote Conselheiro Espiritual com a equipe sempre traz benefícios mútuos benefícios em graus diversos, uma vez que tanto para a equipe, como para o próprio sacerdote, é uma via de mão dupla. Isto foi ressaltado pelo testemunho de grande número de conselheiros espirituais e pelo Papa Paulo VI em sua afirmação por ocasião do Encontro das Equipes em Roma em 1976: “Aos sacerdotes, Conselheiros Espirituais das Equipes, “rogo eu, presbítero como eles, testemunha dos sofrimentos de Cristo e participante da glória que se há de manifestar” (1Pd. 5,1): não hesiteis em dar o melhor da vossa competência, das vossas forças, de vosso zelo pastoral a esse privilegiado campo apostólico. Nele encontrareis uma porção da Igreja de que sois pastores. Não cedais à tentação de crer que o vosso trabalho pastoral se limita a um pequeno grupo de cristãos. A vossa ação multiplicar-se-á pela irradiação de tantos lares. Vós ajudais a aprofundar a sua vida cristã: que a vossa se aprofunde em igual medida” <a class="hint" href="http://www.vatican.va/content/paul-vi/fr/speeches/1976/documents/hf_p-vi_spe_19760922_pellegrinaggio-notre-dame.html">[5]</a>.</p>
+<p>Existe também um aspecto que precisa ser refletido sobre o relacionamento entre o Conselheiro Espiritual e a sua Equipe: se o Conselheiro deveria ou não ser o confessor dos casais de sua equipe. Alguns SCE veem nisso um obstáculo para que o SCE atue firmemente no aconselhamento, pois em algum momento, alguém pode entender que há quebra do sigilo de confissão; outros Conselheiros entendem que, ao acolher o membro de sua equipe no Sacramento da Reconciliação, o Conselheiro poderia conhecer mais profundamente a personalidade de todos eles e, desta forma, melhor aconselhar a cada e a própria Equipe. Porém a decisão de ser confessor ou não da própria equipe é uma decisão que somente ao próprio conselheiro, que conhece mais profundamente os equipistas, compete tomar. Pode ser também que a iniciativa de ele ser o confessor seja dos próprios componentes da equipe ao procurá-lo, ainda neste caso, em situações normais, caberia a ele o discernimento. (nota dos autores[DMA1])</p>
+<p>Devido ao crescimento do número das equipes e a crescente falta de sacerdote, foi criada a figura do (a) Acompanhante Espiritual (AE) para atender essa demanda da falta de sacerdotes nas equipes. O SCE/AE não é o responsável da equipe, pois no Movimento todas as responsabilidades são exercidas pelos casais. Ele é, no entanto, um colaborador imprescindível do Casal Responsável da Equipe, principalmente trabalhando para que a equipe seja uma pequena comunidade cristã, preservando o carisma e a mística do Movimento das ENS, bem como auxiliando os casais da equipe na vivência, com pleno sentido humano e sacramental, do seu batismo e do seu matrimônio.</p>
+<p>Tal auxílio pode adquirir muitos sinônimos: animar (dar vida), orientar (dar sentido), iluminar (dar verdade), propor, provocar, questionar, corrigir etc... São ações que podem estar ao alcance de qualquer membro da equipe - como comunidade de fé -, mas que, vindas do SCE/AE, ganham um significado e uma fecundidade especiais. Com estas ações certamente o SCE/AE estará levando os casais a assumirem a sua missão na Igreja e no mundo, tornando-os casais discípulos missionários <a class="hint" href="#hint" title="" data-bs-original-title="ENS-SRB O Sacerdote Conselheiro e o Acompanhamento Espiritual, SRB, p.21 e 22 disponível em...">[6]</a> a partir de sua pequena comunidade eclesial que se torna missionária.</p>
+<p>O Movimento das ENS é um movimento de espiritualidade conjugal (o carisma fundador), por isso a atribuição primordial do SCE/AE é que as suas ações estejam sempre centradas e focadas no objetivo de acompanhar e dar os suportes necessários para o crescimento espiritual dos casais, crescimento que irá repercutir nos diversos âmbitos de suas vidas eclesiais, familiares e sociais. O Movimento crê que o crescimento na espiritualidade conjugal levará os casais ao caminho da santidade. E a razão de ser das Equipes de Nossa Senhora é justamente ajudar os casais a descobrirem as riquezas do Sacramento do Matrimônio e a viverem uma espiritualidade conjugal. Por meio do seu exemplo, os casais das Equipes de Nossa Senhora querem ser testemunhos do casamento cristão na Igreja e no mundo. “As Equipes de Nossa Senhora têm por objetivo essencial ajudar os casais a caminhar para a santidade. Nem mais, nem menos” dizia Pe. Caffarel <a class="hint" href="#hint" title="" data-bs-original-title="Cf. ENS-SRB. Guia das Equipes de Nossa Senhora, 2018, p.16, disponível em...">[7]</a>. “A formação espiritual deve ocupar um lugar privilegiado na vida de cada um, chamado a crescer incessantemente na intimidade com Jesus Cristo, na conformidade com a vontade do Pai, na dedicação aos irmãos, na caridade e na justiça” <a class="hint" href="http://www.vatican.va/content/john-paul-ii/pt/apost_exhortations/documents/hf_jp-ii_exh_30121988_christifideles-laici.html">[8]</a>.</p>
+</div>
+  </div>
+        </div>
+
+        <div class="wrap-collapsible" data-aos="fade-down">
+  <input id="collapsible2" class="toggle" type="checkbox">
+  <label for="collapsible2" class="lbl-toggle"><h4>MÓDULO 2<br>Participação do Sacerdote Conselheiro Espiritual (SCE) ou do Acompanhante Espiritual (AE) na Reunião Preparatória</h4></label>
+  <div class="collapsible-content"><div class="content-inner"><p>“A amizade resiste mal à separação prolongada. Exige encontros. É por isso que a Equipe se reúne pelo menos uma vez por mês. O comparecimento à reunião mensal é obrigatória” <a class="hint" href="#hint" title="" data-bs-original-title="Cf. ENS-SRB. Guia das Equipes de Nossa Senhora, 2018, p.121, disponível em...">[9]</a>. A razão de ser da reunião mensal está presente no próprio Estatuto: <em>“Porque conhecem a própria fraqueza e a limitação das próprias forças, como também da boa vontade que os anima. Porque a experiência de todos os dias prova-lhes o quanto é difícil viver como cristãos num mundo pagão, e porque depositam uma fé indefectível no poder do auxílio mútuo fraternal, decidiram&nbsp;unir-se em.”</em> Assim, para que essa ajuda possa ser exercida existe a necessidade de os casais estarem reunindo-se pelo menos uma vez ao mês, como previsto nos Estatutos. Afim de que a reunião mensal seja verdadeira ocasião para essa ajuda mútua acontecer, torna-se necessário que a mesma seja preparada com esmero e carinho, e para isso essa preparação deve acontecer em uma reunião específica chamada de Reunião Preparatória. <a class="hint" href="#hint" title="" data-bs-original-title="Cf. ENS-SRB. Manual do Casal Responsável de Equipe, 2020 p.33 disponível em...">[10]</a></p>
+<p>A reunião preparatória acontece habitualmente na residência do Casal Animador, o qual irá&nbsp;conduzir a reunião mensal será um casal diferente. Participam desta preparatória SCE/AE e o Casal Responsável da Equipe. Eventualmente, se existirem dificuldades em relação a residência do casal animador, a Reunião Preparatória poderá ser feita na casa do SCE/AE. É uma ocasião propícia para o SCE/AE conhecer melhor os casais em seus lares, convivendo com eles no seu cenário habitual de vida, e estabelecendo com cada um deles um relacionamento mais personalizado. Esta pode ser também uma ocasião para superar algum preconceito ou incompreensões que os casais tenham sobre a vida religiosa, que possam existir na família do casal animador e assim permitir, muitas vezes, que o SCE/AE possa dizer uma palavra, dar um conselho ou fazer uma observação que não seriam oportunos em outro momento. Desta forma vai sendo firmada uma relação de amizade entre o casal animador e o SCE/AE. Juntos, o Casal Animador, o Casal Responsável e o SCE/AE, determinam o desenrolar da reunião mensal, e preparam especialmente a troca de ideias sobre o Tema de Estudo.</p>
+<p>Na reunião preparatória, o SCE/AE é chamado a exercer o seu papel de discernimento, revisando com o Casal Animador e com o Casal Responsável os pontos essenciais a serem tratados, partindo das respostas dos casais da equipe. O SCE/AE completa ou retifica as ideias formuladas, que eventualmente possam estar em desacordo com as diretrizes e o magistério da Igreja, observando seu papel de conselheiro, guia espiritual e representante do magistério da Igreja. <a class="hint" href="https://www.ens.org.br/upl/arquivos/2017-01/14-o-sacerdote-conselheiro-espiritual.pdf">[11]</a></p>
+<p>Por ocasião da peregrinação das Equipes de Nossa Senhora a Roma em 1976, em uma de suas falas aos equipistas o Papa Paulo VI assim ele se pronunciou: <em>“As vossas equipes nasceram numa hora crítica da história, quando uma guerra horrível acabava de acumular tantas ruínas, as mais graves das quais foram morais e espirituais. O vosso Movimento contribuiu para manter e aprofundar o ideal da família cristã. Continuai a ser o que vos propusestes ser desde o primeiro dia, mantendo a vossa vocação de verdadeira escola de espiritualidade para os casais, profundamente fiéis, em todos os campos, doutrinal, litúrgico e moral, ao Magistério da Igreja” <a class="hint" href="http://www.vatican.va/content/paul-vi/fr/speeches/1976/documents/hf_p-vi_spe_19760922_pellegrinaggio-notre-dame.html">[12]</a></em>. O Santo Padre estimulou os equipistas de ontem e também a nós para sermos fiéis na doutrina, na liturgia e na moral ao Magistério da Igreja; mas é fato que muitos equipistas encontram dificuldades para viver este seguimento. Aqui temos, de forma clara e inequívoca, o amplo campo de atuação do SCE/AE tanto na equipe como na vida dos equipistas, servindo com certeza como uma orientação segura na preparação da reunião mensal, frente as respostas dos equipistas.</p>
+<p>Como guia espiritual da equipe, o SCE/AE deve estar atento para que as diversas partes da reunião estejam sempre conectadas com o Tema de Estudo e para que não haja dispersão de assuntos durante o transcorrer da reunião. Colabora também para que o Momento de Oração da reunião mensal seja de tal forma preparado que se torne o ponto principal da união espiritual, pela oração, dos casais com o Cristo presente também nesta reunião. O SCE/AE colabora com o Casal Animador e com o Casal Responsável para que a reunião mensal seja eficaz e se torne um momento de celebração manifestando-se como um encontro de uma verdadeira pequena <em>ecclesia</em>. Percebe-se, então, que o SCE/AE, na preparação da reunião estará fazendo um acompanhamento da evolução da espiritualidade, de cada membro da equipe, pelas suas respostas, e fará as correções necessárias, para que reunião mensal seja um momento de oração, partilha, comunhão e crescimento espiritual de todos, e esteja de acordo com os ensinamentos da Igreja. Não se pode esquecer que é na reunião mensal que acontecerá o acompanhamento espiritual da equipe como um todo, uma comunidade de casais cristãos em busca da santidade através do sacramento do matrimônio.&nbsp;<a class="hint" href="#hint" title="" data-bs-original-title="Cf. ENS-SRB. O Espirito e as Grandes Linhas do Movimento, 2018 p. 28, disponível em...">[13]</a></p>
+<p>Na reunião preparatória que o SCE/AE pode particularmente aprofundar o seu acompanhamento espiritual do Casal Animador e do Casal Responsável, pois ela é uma ocasião que lhe permite maior intimidade com eles. Nesta visita, em vista da a reunião preparatória, na residência do Casal Animador, juntamente com o Casal Responsável, o SCE/AE completa uma de suas missões de educação espiritual dentro do Movimento da Equipe de Nossa Senhora. Padre Joaquim, que serviu como Conselheiro Espiritual da Super Região da Espanha de 1981 a 1997, resumiu bem a missão de acompanhamento espiritual: <em>“O Sacerdote Conselheiro Espiritual é a presença de Cristo na ‘pequena Igreja’ que é a equipe, por isso, o seu papel não consiste nem em ser autoridade nem em dirigir a equipe. Procure pois não impor o seu próprio estilo, nem suas ideias pessoais, por mais geniais que sejam, nem sequer usar a sua preponderância para manipular a equipe para sua vantagem ou segundo a sua necessidade. A sua tarefa consiste em animar e promover o amor nos casais, e a partir da fé e do Evangelho, orientar as suas vidas”</em>. <a class="hint" href="#hint" title="" data-bs-original-title="Cf. ENS-SRB. O Sacerdote Conselheiro e o Acompanhamento Espiritual, 2019, p, 45, disponível em...">[14]</a></p></div>
+  </div>
+        </div>
+
+        <div class="wrap-collapsible" data-aos="fade-down">
+  <input id="collapsible3" class="toggle" type="checkbox">
+  <label for="collapsible3" class="lbl-toggle"><h4>MÓDULO 3<br>Participação do Sacerdote Conselheiro Espiritual (SCE) ou do Acompanhante Espiritual (AE) na Reunião Mensal</h4></label>
+  <div class="collapsible-content"><div class="content-inner"><p>Uma Equipe de Nossa Senhora é uma comunidade cristã, composta de cinco a sete casais, acompanhada por um Sacerdote <a class="hint" href="#hint" title="" data-bs-original-title="Cf. ENS-SRB. Guia das Equipes de Nossa Senhora, 2018, p.75 disponível em...">[15]</a>. Sendo uma comunidade ela tem um propósito bem definido: a busca de uma caminhada em direção à santidade, através da entreajuda entre os diversos membros da equipe, vivendo uma comunhão fraterna cuja maior intensidade é sentida na Reunião Mensal. A reunião mensal somente poderá atingir as suas finalidades se for vivida verdadeiramente como uma pequena <em>ecclesia</em>, onde o Cristo está presente. Mas para que isto aconteça, vários pontos enumerados por Padre Caffarel e uma de suas conferências devem ser levados em conta: <a class="hint" href="#hint" title="" data-bs-original-title="Cf. ENS-SRB. O Espirito e as Grandes Linhas do Movimento, 2018 p. 24 e 25, disponível em...">[16]</a></p>
+<ol>
+	<li><em>Fé </em>na presença do Cristo no meio de nós.</li>
+	<li><em>Ruptura</em>. Para que aconteça um frutuoso encontro com Cristo, devemos romper com tudo o que nos prende, cuidados e preocupações para termos a alma inteiramente disponível.</li>
+	<li><em>Reunião em nome de Cristo</em>. Ele é o motivo do encontro, se formos para a reunião motivados pela amizade pessoal, estaríamos desvirtuando o encontro.</li>
+	<li><em>Vivência do Mandamento Novo</em>. Vivência da amizade fraterna, a partir de Cristo e de seu mandamento, é que nos leva a dar de nós mesmos em benefício de nossos irmãos.</li>
+	<li><em>Ouvir a Palavra de Deus</em>. Prestar ouvidos à palavra de Cristo presente no encontro e que nos fala através do SCE/AE. Ouvir não somente com os ouvidos, mas com o coração.</li>
+	<li><em>Responder à Palavra,</em> através de uma oração espontânea que brote de nosso interior.</li>
+	<li><em>Em união com a Igreja. </em>O que nos leva à pequena <em>ecclesia</em>, que é a equipe, é o desejo de sermos melhores filhos e filhas da Igreja, na Igreja e para a Igreja, afinal ela é a grande <em>ecclesia</em>. Separados dela, seríamos tão somente uma seita</li>
+</ol>
+<p>A equipe e, consequentemente a reunião mensal, não é um fim em si mesma: é um meio a serviço dos seus membros, que vai permitir-lhes:<em> “viver tempos fortes de oração em comum e de coparticipação ‘e’ ajudar recíproca e eficazmente a caminharem para o Senhor e darem testemunho d`Ele. Esses aspectos são vividos em primeiro durante a reunião mensal. Esta compreende habitualmente”</em>: <a class="hint" href="#hint" title="" data-bs-original-title="Cf. ENS-SRB. Guia das Equipes de Nossa Senhora, 2018, p.79 disponível em...">[17]</a></p>
+<ul>
+	<li>Uma refeição, que é mais especialmente o momento da amizade;</li>
+	<li>Uma oração em comum, que é o centro e o ponto mais alto da reunião e que pode, por vezes, tomar a forma de uma celebração eucarística;</li>
+	<li>Uma partilha e um pôr em comum, tempo forte de ajuda mútua, particularmente de ajuda mútua espiritual e apostólica;</li>
+	<li>Uma troca de impressões sobre o tema de estudo (de reflexão) do mês, que é mais especialmente o momento da fé.</li>
+</ul>
+<p>A reunião mensal da equipe é o ápice da vida desta pequena comunidade nutrida pela presença do Cristo Ressuscitado, vivo, atento a todos e amando a cada um como ele é. Esta reunião deve acontecer, no mínimo, dez vezes ao ano e compor-se de cinco etapas, a saber: - A Refeição; - A Coparticipação; - A Oração; - A Partilha dos Pontos Concretos de Esforço; - O Estudo sobre o Tema do Ano.</p>
+<p>O SCE/AE deve participar ativamente de todas as partes que compõe a reunião, contribuindo para dar a todas elas as dimensões de assembleia cristã <a class="hint" href="#hint" title="" data-bs-original-title="Cf. ENS-SRB. Guia das Equipes de Nossa Senhora, 2018, p.43 e 44 disponível em...">[18]</a>. A <em>Refeição </em>é um momento de troca de ideias, muito livre, onde os casais comentam os fatos marcantes vividos durante o mês. É um momento em que se estreitam os laços de amizade entre os membros da equipe, incluindo o SCE/AE. É uma oportunidade para o SCE/AE interagindo com os demais orientar, corrigir, manter o espírito de caridade cristã, dando o ponto de vista da Igreja ante os problemas que eventualmente são apresentados. A presença do SCE/AE lembra o grande sentido da refeição tomada em comum, ela tem também um sentido eucarístico, de comunhão <a class="hint" href="https://www.ens.org.br/upl/arquivos/2017-01/14-o-sacerdote-conselheiro-espiritual.pdf">[19]</a>. <em>“...E, nas casas, partiam o pão, tomando o alimento com alegria e simplicidade de coração.” (At 2, 46).</em></p>
+<p>A Oração é o elemento essencial na vida de cada equipe. é o momento em que a equipe está reunida em torno da palavra de Deus, que é o próprio Cristo fazendo-se presente, como disse Santo. Agostinho: <em>“Por seu Evangelho, Jesus Cristo está realmente presente entre nós” <a class="hint" href="#hint" title="" data-bs-original-title="Cf. SANTO AGOSTINHO, Confissões, I, 1.">[20]</a></em>. A escuta da Palavra é tão importante na vida da Equipe que o próprio Padre Caffarel fez uma comparação entre o Evangelho e a Eucaristia <a class="hint" href="#hint" title="" data-bs-original-title="Cf. CAFFAREL, Henri. Centelhas de sua Mensagem, 2015 p.85 e 86, disponível em...">[21]</a>: <em>“... é o próprio Jesus Cristo quem nos convida a comparar o Evangelho com a Eucaristia. Escutem estas duas frases quase idênticas: uma é referente à Eucaristia: ‘Quem come da minha carne e bebe o meu sangue, terá a vida eterna’ (Jo 6,54). A outra se refere à sua Palavra: ‘Se alguém guardar a minha Palavra, não verá a morte jamais’” (Jo 8,51). </em>Esse momento é fundamental na reunião. Esse tempo de oração começa com a invocação ao Espírito Santo que deve nos guiar até mesmo em nosso tempo de oração, prossegue com a leitura, em voz alta, de um texto da Sagrada Escritura, seguida de um tempo de silêncio para cada um acolher interiormente e meditar a palavra do Senhor. Em seguida, cada um expressa seu pensamento sobre o texto em forma de uma oração espontânea, e também manifesta, diante de Deus e dos demais, as suas intenções em forma de oração partilhada. Em seguida o SCE/AE tendo participado da oração espontânea e da prece das intenções, reúne e resume as preces e as intenções dos casais, apresentando-as a Deus. Este é um momento muito especial para o SCE/AE conhecer melhor espiritualmente os casais e, a partir deste conhecimento e de seu interesse pela santificação deles, aconselhá-los melhor.</p>
+<p>No tempo destinado a este momento de oração o SCE/AE poderá ainda mais auxiliar os equipistas a desenvolverem métodos de oração que possibilitem uma maior intimidade com a Palavra de Deus. Quando ele percebe que existe alguma dificuldade em relação ao texto apresentado, poderá propor alguma pista para facilitar o entendimento do mesmo, estimulando os casais em suas meditações.</p>
+<p>Esse tempo da oração termina com uma oração litúrgica, uma oração da Igreja e acolhida pela Igreja: Creio, Pai Nosso, canto de meditação baseado no evangelho, orações reconhecidas e propostas pela Igreja, um salmo, etc <a class="hint" href="#hint" title="" data-bs-original-title="Cf. ENS-SRB. Guia das Equipes de Nossa Senhora, 2018, p.46 disponível em...">[22]</a>. Pe. Miguel Poyá, que foi conselheiro de equipes na Espanha, deu um testemunho mostrando como é importante a participação do SCE/AE nesse momento de oração, vamos ouvi-lo: <em>“Com a experiência de mais de 30 anos nas equipes, devo confessar que aquela pequena pregação após a proclamação do texto bíblico, como explicação dele e introdução à oração partilhada, é para mim um dos momentos privilegiados e apreciados de entre os meus múltiplos serviços à Palavra. Preparo-a sempre com entusiasmo e carinho porque considero que constitui o meu contributo mais importante para a reflexão sobre o tema de estudo e para a própria vida da equipe.</em> Além de favorecer o clima de oração, o Conselheiro deve atualizar a Palavra de Deus, isto é, torná-la compreensível e interpeladora. <a class="hint" href="#hint" title="" data-bs-original-title="Cf. ENS-SRB. O Sacerdote Conselheiro e o Acompanhamento Espiritual, 2019, p, 23, disponível em...">[23]</a></p>
+<p>A <em><strong>Partilha </strong></em>é um tempo forte de ajuda mútua espiritual, vivido em clima de oração. É um momento em que os equipistas se responsabilizam uns pelos outros. É o caminho de uma conversão comunitária. Cada equipista é convidado, de forma concreta, a partilhar sua vivência dos Pontos Concretos de Esforço durante o mês que passou (no intervalo das reuniões) e como ela influenciou, colaborou ou determinou algum crescimento espiritual em sua vida pessoal ou conjugal.</p>
+<p>A partilha dos Pontos Concretos de Esforço não é um exame de consciência, nem uma constatação de um sucesso ou fracasso, mas uma releitura dos esforços necessários para progredir na vida espiritual, observando os efeitos destes esforços na sua vida pessoal e conjugal <a class="hint" href="#hint" title="" data-bs-original-title="Cf. ENS-SRB. Guia das Equipes de Nossa Senhora, 2018, p.47 e 48 disponível em...">[24]</a>. Esse é o momento em que cada equipista, expondo de maneira sincera as suas conquistas e suas dificuldades na vivência dos Pontos Concretos de Esforço, apresenta realmente como cresceu e amadureceu na sua vida espiritual; ao fazer isto os equipistas que partilham estarão exercitando uma ajuda mútua essencial em relação aos demais casais e colaborando decisivamente para o crescimento da equipe como um todo. As conquistas de uns certamente serão ajuda para outros na superação de suas próprias dificuldades, e entusiasmo diante dos desafios e obstáculos que encontram.</p>
+<p>Com o testemunho de cada equipista o SCE/AE, enquanto guia espiritual, perceberá as dificuldades dos equipistas nesta vivência, para os encorajar a levar a sério esses meios (os PCEs), e progressivamente incorporá-los em sua vida, <em>“acentuando o valor dos Pontos Concretos de Esforço como fator de progresso espiritual”</em>. <a class="hint" href="https://www.ens.org.br/upl/arquivos/2017-01/14-o-sacerdote-conselheiro-espiritual.pdf">[25]</a></p>
+<p>É fundamental entender que os equipistas, compartilhando sua vida espiritual e ajudando-se mutuamente e colocando em comum os seus dons, estão consolidando a equipe como verdadeira comunidade de casais cristãos. Eles, como casais cristãos, devem vivenciar as três atitudes cristãs fundamentais na vida pessoal, na vida conjugal e na vida de equipe. Estas três atitudes deverão ser o pano de fundo do momento da partilha. Elas são:</p>
+<ol>
+	<li><em>A procura assídua da vontade de Deus.</em></li>
+	<li><em>A procura da verdade de nós mesmos.</em> Os equipistas devem ter os corações abertos e sinceros nesse momento da Partilha.</li>
+	<li><em>A vivência do encontro e comunhão.</em> Na reunião estão reunidos com os irmãos e em nome de Cristo, por isso é o momento de viver intensamente o encontro e a comunhão com esses irmãos e com Deus. [<a class="hint" href="#hint" title="" data-bs-original-title="Cf. ENS-SRB. Guia das Equipes de Nossa Senhora, 2018, p.47 e 48 disponível em...">24</a>,<a class="hint" href="https://www.ens.org.br/carta-mensal/262&quot;>https://www.ens.org.br/carta-mensal/262">26</a>]</li>
+</ol>
+<p>As três atitudes, vividas na reunião da Equipe, serão frutos da vivência dos Pontos Concretos de Esforço (Escuta da Palavra, Meditação Diária, Oração Conjugal, Dever de Sentar-se e Retiro Anual) por cada equipista e casal, no tempo de intervalo entre as reuniões. Padre Mario, SCE da ECIR no período de 1994 a 1999 <a class="hint" href="https://www.ens.org.br/carta-mensal/537/617&quot;>https://www.ens.org.br/carta-mensal/537/617">[27]</a> lembrou que <em>“<strong>É Escutando a Palavra de Deus</strong> atentamente e <strong>Meditando-a</strong> com profundidade que vamos conhecendo a <strong>Vontade de Deus</strong> que nos quer santos e felizes. É realizando a nossa <strong>Oração Conjugal</strong> e também a oração familiar bem como o <strong>Dever de Sentar-se</strong> que se vai vivendo a Verdade e conhecendo mais a fundo um ao outro. É fazendo o <strong>Retiro Anual</strong> e sendo protagonistas da missão, assistidos pelo Espírito Santo que vivemos o <strong>Encontro e a Comunhão</strong>. Com isso, sendo vida e compromisso, estamos contribuindo cada vez mais para que a Partilha de nossas reuniões se torne mais rica, profunda e reveladora de nosso progresso cristão.”</em> Pelas palavras do Padre Mario percebe-se que o SCE/AE pode e deve exercer forte influência nos casais, para que assumam esse compromisso dos Pontos Concretos de Esforço não para os outros, mas, e principalmente para si mesmos.</p>
+<p>A <strong><em>Coparticipação </em></strong>é o tempo forte de entreajuda para os casais quando estes colocam em comum suas preocupações familiares, profissionais, civis, eclesiais, as descobertas, as tristezas e alegrias de cada um: <em>“Antes de tudo, mantende entre vós uma ardente caridade, porque a caridade cobre a multidão dos pecados."(1Pd 4,8)</em>. Neste momento da reunião os equipistas abrem seus corações e expõem o mais íntimo de suas vidas aos outros, na presença de Cristo. Desta forma é consolidada a confiança mútua e se estabelece dentro da equipe o sigilo, uma vez que aquilo que é revelado na equipe não deve ser divulgado fora dela <a class="hint" href="#hint" title="" data-bs-original-title="Cf. ENS-SRB. Guia das Equipes de Nossa Senhora, 2018, p.46 disponível em...">[28]</a>. Esse é o momento de escuta atenciosa, evitando-se conversas paralelas, pois nas colocações feitas por um equipistas pode estar um pedido de ajuda ou de orientação. O SCE/AE participando ativamente na coparticipação pode ter oportunidade para oferecer um aconselhamento para a vida do equipista, uma oportunidade de correção, de catequese, ou um momento de esclarecimento sobre a doutrina da Igreja, cumprindo assim sua missão no acompanhamento dos casais.</p>
+<p>A troca de ideias sobre o <strong><em>Tema de Estudo</em></strong> é um meio de aprofundar ainda mais nossa fé à luz daquele estudo partilhado. Qualquer que seja o tema abordado no ano, ele deve conduzir os equipistas, pessoalmente e conjugalmente, ao encontro com a Palavra de Deus para a compreensão da realidade abordada pelo Tema <a class="hint" href="#hint" title="" data-bs-original-title="Cf. ENS-SRB. Guia das Equipes de Nossa Senhora, 2018, p.49 disponível em...">[29]</a>. Ele exige uma preparação antecipada, sendo suas respostas já conhecidas na reunião preparatória. E, como na coparticipação, a escuta é importante nesse momento, para que através dela a discussão possa ser profícua. Não se pretende que haja uma discussão teórica, mas que os casais sejam conduzidos a trazer o assunto para o cotidiano de suas vidas. O SCE/AE aguardará o momento oportuno para intervir, a fim de esclarecer ou retificar pontos de vista ou de doutrina, elevar os debates evitando que fiquem somente no plano intelectual ou superficial, mas que tais debates levem os casais a inserir os conhecimentos adquiridos na própria vida, de modo a transformá-la pouco a pouco, em inteira conformidade com as exigências evangélicas.</p>
+<p>Fica claro, neste ponto, que a participação do SCE/AE no acompanhamento dos casais da equipe, principalmente durante as reuniões mensais, é fundamental para o crescimento espiritual dos mesmos, afim de, como consequência, viverem com maior intensidade e fidelidade o Carisma do Movimento: A Espiritualidade Conjugal, como um caminho para a santidade vivida no Sacramento do Matrimônio conforme recordam as palavras do Padre Henri Caffarel: <em>“A espiritualidade conjugal é a arte de viver no casamento o ideal evangélico que o Cristo propõe a todos seus discípulos. Na origem da espiritualidade conjugal existe um apelo do Cristo. Nossa vocação de casal consiste em caminhar juntos em direção ao Cristo, um e o outro, um com o outro, um pelo outro” <a class="hint" href="#hint" title="" data-bs-original-title="Cf. ENS-SRB. Guia das Equipes de Nossa Senhora, 2018, p.24 disponível em...">[30]</a></em>. A Mística do Movimento, isto é, a força interna dele que impulsiona o caminhar dos equipistas, é baseada em três aspectos:</p>
+<ul>
+	<li>Reunidos em nome de Cristo;</li>
+	<li>A ajuda mútua e o</li>
+	<li>Testemunho.</li>
+</ul>
+<p>A vivência desses elementos, entre os casais, certamente será muito estimulada pelo acompanhamento que o SCE/AE dá aos casais, tanto nos momentos de Oração, como também na Coparticipação e na Partilha dos Pontos Concretos de Esforço. <a class="hint" href="#hint" title="" data-bs-original-title="Idem, p.25">[31]</a></p></div>
+  </div>
+        </div>
+
+           <div class="wrap-collapsible" data-aos="fade-down">
+  <input id="collapsible4" class="toggle" type="checkbox">
+  <label for="collapsible4" class="lbl-toggle"><h4>MÓDULO 4<br>Participação do Sacerdote Conselheiro Espiritual (SCE) ou do Acompanhante Espiritual (AE) fora das reuniões: (O exercício do acompanhamento na vida cotidiana)</h4></label>
+<div class="collapsible-content"><div class="content-inner"><p>A vida dos equipistas, no Movimento, não se resume às reuniões preparatórias e mensais; mas ela permanece ativa durante todo o transcorrer do mês, em cada dia e momento de sua vida. Diante disso, fora do espaço da reunião preparatório e mensal, é indispensável que sejam mantidos contatos dos casais entre si e deles com o SCE/AE. De fato, um único encontro mensal é insuficiente para se formar comunidade eclesial. É preciso que o Casal Responsável, o SCE/AE e o Casal Animador do mês, usando de criatividade, criem oportunidades para outros encontros durante o mês como, por exemplo, noites de oração, reuniões de estudo, confraternizações etc. Tudo criará um maior vínculo, não só entre os casais, mas também entre os casais e o SCE/AE. Tais encontros favorecerão um melhor conhecimento mútuo dos membros da equipe e também uma maior intimidade e, consequentemente, a confiança vai instalar-se cada vez mais, o que é fundamental na convivência dentro da equipe. Essa crescente confiança possibilitará mais facilmente o exercício da ajuda mútua, um dos pilares da mística do Movimento <a class="hint" href="#hint" title="" data-bs-original-title="Cf. ENS-SRB. Guia das Equipes de Nossa Senhora, 2018, p.51 disponível em...">[32]</a>. Não se pode esquecer que SCE/AE exerce uma missão eclesial também para além do movimento, sendo assim, a participação nessas atividades depende da sua disponibilidade e, caso não seja possível, sua ausência deve ser tranquilamente compreendida e nunca servir de justificativa para quaisquer outros membros da equipe.</p>
+<p>O acompanhamento dos casais, seja nestes encontros ou em contatos diretos que o SCE/AE, conduzirá a um conhecimento mais profundo e verdadeiro das necessidades dos casais e possibilitará ao SCE/AE realizar sua missão de guia espiritual de forma mais eficaz. Tal situação mostra a importância da sua participação na vida da equipe fora das reuniões mensais. Precisamos sempre recordar que a vida do casal não se resume aos momentos em que está num evento do movimento, mas também envolve o seu cotidiano, - no trabalho voluntário ou profissional, no serviço a Igreja na paróquia ou Diocese etc. – os ambientes em que os equipistas devem viver a sua missão de testemunho do valor do matrimônio, como desejado por Deus e como caminho para a santidade.</p>
+<p>A missão é sempre vivida e realizada como casal cristão inserido na vida da comunidade e não como Movimento das Equipes de Nossa Senhora inserido numa paróquia ou comunidade. Os casais são chamados a ser fermento de renovação, não somente na Igreja, mas também no mundo, e a mostrar através de seu testemunho que: <a class="hint" href="#hint" title="" data-bs-original-title="Cf. ENS-SRB. Guia das Equipes de Nossa Senhora, 2018, p.107 disponível em...">[33]</a></p>
+<ul>
+	<li>O casamento está ao serviço do amor,</li>
+	<li>O casamento está ao serviço da felicidade e</li>
+	<li>O casamento está ao serviço da santidade.</li>
+</ul>
+<p>O relacionamento entre SCE/AE e os membros da sua equipe fora das reuniões, como exposto acima, permitirá ao SCE/AE incentivar os equipistas a viverem o seu testemunho, em todos os ambientes nos quais estiverem presentes, principalmente nos ambientes em que estes têm maiores dificuldades, ou aonde não estejam bem conscientes de sua missão como deseja e proposta pelo Movimento, como foi lembrado por Padre Caffarel. <em>“Se as Equipe de Nossa Senhora não são um viveiro de homens e mulheres prontos a assumir, corajosamente, todas as responsabilidades na igreja e no mundo, elas perdem sua razão de ser”</em>. Então, podemos perceber que o acompanhamento do SCE/AE junto aos casais tem como um dos objetivos o crescimento espiritual dos mesmos e ajudá-los a se preparar para essas responsabilidades. <a class="hint" href="#hint" title="" data-bs-original-title="Idem, p. 104">[34]</a></p>
+<p>Toda preparação para uma missão deve ser exigente e persistente. A palavra EXIGÊNCIA é tão importante na vida do equipista que aparece com frequência nos escritos e nas palavras do Padre Caffarel; em toda a obra dele encontramos esse denominador comum: a exigência, a ascese e o dever de obediência. Esta exigência se traduzirá para os casais das Equipes de Nossa Senhora na implantação da Carta Fundacional e nas “obrigações”. A exigência, pois, sempre esteve presente na vida dos equipistas desde o início do Movimento, sem ela o Movimento esmoreceria <a class="hint" href="#hint" title="" data-bs-original-title="Cf. CAFFAREL, Henri. Padre Caffarel, Profeta do Matrimônio, 2009, p. 50 disponível em...">[35]</a>. Uma vez que o Movimento é Cristocêntrico, ele deve conduzir os casais a uma buscar uma vida nova em Cristo, o que não é muito fácil, como o próprio Cristo recorda em várias passagens do Evangelho <a class="hint" href="#hint" title="" data-bs-original-title="Idem, p.49">[36]</a>: <em>“Não penseis que vim trazer paz à terra, não vim trazer paz, mas sim a espada”</em> (Mt 10,34). <em>“Se alguém quer vir após mim, renuncie a si mesmo, tome a sua cruz, cada dia, e siga-me”</em> (Lc 9,23). <em>“É mais fácil um camelo passar pelo buraco de uma agulha, do que um rico entrar no reino de Deus”</em> (Mt 19,24).</p>
+<p>Pe. Caffarel, como sacerdote, vivenciava essa exigência a partir de um amor incondicional a Cristo <a class="hint" href="#hint" title="" data-bs-original-title="Cf. CAFFAREL, Henri. Padre Caffarel, Profeta do Matrimônio, 2009, p. 50 disponível em...">[37]</a>. Da mesma forma o SCE/AE também deve buscar vivenciá-la, a partir da adesão total a Cristo por uma elevada e exigente vida cristã; desta maneira terá todas as condições necessárias para conduzir os casais também a vida cristã exigente e elevada, como necessária para o cumprimento de sua missão equipista, da forma prevista nos estatutos do Movimento. Viver de forma exigente com uma exigência amorosa não consiste em enfurecer-se contra os defeitos dos outros, mas, assim como se aviva uma chama, em fomentar no coração o crescimento da generosidade para com Deus e com o próximo. Somente assim a sua exigência de amor dará frutos <a class="hint" href="#hint" title="" data-bs-original-title="Idem, p.52">[38]</a>.&nbsp;Lembremos as belas palavras de Padre Caffarel: <em>“O teu amor sem exigência me diminui; a tua exigência sem amor me revolta; o teu amor exigente me engrandece.” <a class="hint" href="https://www.ens.org.br/causa-de-canonizacao-do-pe-henri-caffarel/citacoes-do-pe-caffarel">[39]</a></em></p>
+<p>O tipo de amor indicado por Padre Caffarel direcionará os equipistas no rumo do mandamento novo: <em>“Dou-vos um <strong>mandamento novo</strong>, que vos ameis uns aos outros. Como eu vos amei, amai-vos também uns aos outros. Nisto reconhecerão todos que sois meus discípulos se tiverdes amor uns pelos outros”</em> (Jo 13, 34-35). Em 1965, no encontro de Lourdes, Padre Caffarel insistiu que a vocação do Movimento é o amor fraterno, indicando em sua fala que <em>“As Equipes de Nossa Senhora estão a serviço do Mandamento Novo”</em>. Ora, o que é característico de uma Equipe de Nossa Senhora, no que se refere à união entre cônjuges, à união entre pais e filhos, é ter na prática do “mandamento novo” a sua razão de ser. O movimento está fundado para isto, pois tudo: organização, métodos, obrigações, atividades, está estruturado em vista desta finalidade. Desta forma a vivência do amor fraterno entre os casais da equipe é o fundamento para a vida da própria equipe. Existe, desta forma, um campo muito importante para que o SCE/AE acompanhe os casais, evitando que atitudes adversas à caridade fraterna venham a ocorrer. <a class="hint" href="#hint" title="" data-bs-original-title="Cf. CAFFAREL, Henri. Centelhas de sua Mensagem, 2015, p.27, disponível em...">[40]</a></p>
+</div>
+  </div>
+        </div>
+
+        <div class="wrap-collapsible" data-aos="fade-down">
+  <input id="collapsible6" class="toggle" type="checkbox">
+  <label for="collapsible6" class="lbl-toggle"><h4>Referências bibliográficas </h4></label>
+<div class="collapsible-content"><div class="content-inner"><p>1 - Cf. ERI. Estatutos - Carta fundadora, disponível <a href="https://equipes-notre-dame.com/pt/carta-das-equipas-de-nossa-senhora-1947-1977/" target="_blank">https://equipes-notre-dame.com/pt/carta-das-equipas-de-nossa-senhora-1947-1977/</a></p>
+<p>2 - Cf ERI. Estatutos Canônicos das Equipes de Nossa Senhora, 7, disponível em <a href="https://www.ens.org.br/o-movimento/decreto-de-reconhecimento" target="_blank">https://www.ens.org.br/o-movimento/decreto-de-reconhecimento</a></p>
+<p>3 - Cf. ENS-SRB, O Sacerdote Conselheiro Espiritual, 2015, p.12 disponível em <a href="https://www.ens.org.br/upl/arquivos/2017-01/14-o-sacerdote-conselheiro-espiritual.pdf" target="_blank">https://www.ens.org.br/upl/arquivos/2017-01/14-o-sacerdote-conselheiro-espiritual.pdf</a></p>
+<p>4 - Pe. CARRÉ, O verdadeiro rosto do padre. In: O Espirito e as Grandes Linhas do Movimento, 2014, p. 30, disponível em...</p>
+<p>5 - Cf. ENS-SRB, O Sacerdote Conselheiro Espiritual, 2015, p.18 disponível em <a href="https://www.ens.org.br/upl/arquivos/2017-01/14-o-sacerdote-conselheiro-espiritual.pdf" target="_blank">https://www.ens.org.br/upl/arquivos/2017-01/14-o-sacerdote-conselheiro-espiritual.pdf</a></p>
+<p>6 - Papa Paulo VI, Conferencia as peregrinos das Equipes de Nossa Senhora em&nbsp; 22/09/76 disponível em <a href="http://www.vatican.va/content/paul-vi/fr/speeches/1976/documents/hf_p-vi_spe_19760922_pellegrinaggio-notre-dame.html" target="_blank">http://www.vatican.va/content/paul-vi/fr/speeches/1976/documents/hf_p-vi_spe_19760922_pellegrinaggio-notre-dame.html</a></p>
+<p>7 - ENS-SRB O Sacerdote Conselheiro e o Acompanhamento Espiritual, SRB, p.21 e 22 disponível em...</p>
+<p>8 - Cf. ENS-SRB. Guia das Equipes de Nossa Senhora, 2018, p.16, disponível em...</p>
+<p>9 - Cf. , disponível Laici, 60, disponível em <a href="http://www.vatican.va/content/john-paul-ii/pt/apost_exhortations/documents/hf_jp-ii_exh_30121988_christifideles-laici.html" target="_blank">http://www.vatican.va/content/john-paul-ii/pt/apost_exhortations/documents/hf_jp-ii_exh_30121988_christifideles-laici.html</a></p>
+<p>10 - Cf. ENS-SRB. Guia das Equipes de Nossa Senhora, 2018, p.121, disponível em...</p>
+<p>11 - Idem, p.118</p>
+<p>12 - Cf. ENS-SRB.&nbsp; Manual do Casal Responsável de Equipe, 2020 p.33 disponível em...</p>
+<p>13 - Cf. ENS-SRB, O Sacerdote Conselheiro Espiritual, 2015, p.21 disponível em <a href="https://www.ens.org.br/upl/arquivos/2017-01/14-o-sacerdote-conselheiro-espiritual.pdf" target="_blank">https://www.ens.org.br/upl/arquivos/2017-01/14-o-sacerdote-conselheiro-espiritual.pdf</a></p>
+<p>14 - Cf. ENS-SRB. O Espirito e as Grandes Linhas do Movimento, 2018 p. 28, disponível em...</p>
+<p>15 - Cf. ENS-SRB. O Sacerdote Conselheiro e o Acompanhamento Espiritual, 2019, p, 45, disponível em...</p>
+<p>16 - Cf. ENS-SRB. Guia das Equipes de Nossa Senhora, 2018, p.75 disponível em...</p>
+<p>17 - Cf. ENS-SRB. O Espirito e as Grandes Linhas do Movimento, 2018 p. 24 e 25, disponível em...</p>
+<p>18 - Cf. ENS-SRB. Guia das Equipes de Nossa Senhora, 2018, p.79 disponível em...</p>
+<p>19 - Idem, p.43 e 44 disponível em...</p>
+<p>20 - Cf. ENS-SRB, O Sacerdote Conselheiro Espiritual, 2015, p.21 disponível em <a href="https://www.ens.org.br/novo/upl/arquivos/2017-01/14-o-sacerdote-conselheiro-espiritual.pdf" target="_blank">https://www.ens.org.br/novo/upl/arquivos/2017-01/14-o-sacerdote-conselheiro-espiritual.pdf</a></p>
+<p>21 - Cf. SANTO AGOSTINHO, Confissões, I, 1.</p>
+<p>22 - Cf. CAFFAREL, Henri. Centelhas de sua Mensagem, 2015 p.85 e 86, disponível em...</p>
+<p>23 - Cf. ENS-SRB. Guia das Equipes de Nossa Senhora, 2018, p.46 disponível em...</p>
+<p>24 - Cf. ENS-SRB. O Sacerdote Conselheiro e o Acompanhamento Espiritual, 2019, p, 23, disponível em...</p>
+<p>25 - Cf. ENS-SRB. Guia das Equipes de Nossa Senhora, 2018, p.47 e 48 disponível em...</p>
+<p>26 - Cf. ENS-SRB, O Sacerdote Conselheiro Espiritual, SRB, 2015, p.22, disponível em <a href="https://www.ens.org.br/upl/arquivos/2017-01/14-o-sacerdote-conselheiro-espiritual.pdf" target="_blank">https://www.ens.org.br/upl/arquivos/2017-01/14-o-sacerdote-conselheiro-espiritual.pdf</a></p>
+<p>27- Carta Mensal das Equipes de Nossa Senhora, 262 ano XXX, março 1990, pág. 8 disponível em <a href="https://www.ens.org.br/carta-mensal/262" target="_blank">https://www.ens.org.br/carta-mensal/262</a></p>
+<p>28 - Cf. Carta Mensal das Equipes de Nossa Senhora, 537, 2020, ano LX – ed. Especial/70 anos, p. 10 disponível em <a href="https://www.ens.org.br/carta-mensal/537/617" target="_blank">https://www.ens.org.br/carta-mensal/537/617</a></p>
+<p>29 - Cf. ENS-SRB. Guia das Equipes de Nossa Senhora, 2018, p.46 disponível em...</p>
+<p>30 - Idem, p.49 disponível em...</p>
+<p>31- Cf. ENS-SRB. O Espirito e as Grandes Linhas do Movimento, 2018 p. 29, disponível em...</p>
+<p>32 - Cf. ENS-SRB. Guia das Equipes de Nossa Senhora, 2018, p.24 disponível em...</p>
+<p>33 - Idem, p.25</p>
+<p>34 - Idem, p.51 disponível em...</p>
+<p>35 - Idem, p.107 disponível em...</p>
+<p>36 - Idem, p. 104</p>
+<p>37 - Cf. CAFFAREL, Henri. Padre Caffarel, Profeta do Matrimônio, 2009, p. 50 disponível em...</p>
+<p>38 - Idem, p.49</p>
+<p>39 - Idem, p.52</p>
+<p>40 - Cf. CAFFAREL, Henri, Landau d’Or mai-ago 1956, disponível em <a href="https://www.ens.org.br/causa-de-canonizacao-do-pe-henri-caffarel/citacoes-do-pe-caffarel" target="_blank">https://www.ens.org.br/causa-de-canonizacao-do-pe-henri-caffarel/citacoes-do-pe-caffarel</a></p>
+<p>41 - Cf. CAFFAREL, Henri. Centelhas de sua Mensagem, 2015, p.27, disponível em...</p>
+    </div>
+</div>
+        </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="twelve columns" align="center" style="padding:10px 20px 40px 20px">
+            <a href="O-SCE-e-o-AE-na-Equipe.pdf" target="_blank"><button class="button-primary" style="width:100%;max-width:310px; white-space:normal; border-radius:110px; line-height:130%; height:auto; padding:13px 27px" data-aos="fade-up">Salvar o arquivo com todos os módulos</button></a>
+            <p style="margin:40px auto"><a href="https://cursos.ensbr.com/vpj/"><button style="height:40px;line-height:14px">< mais cursos</button></a></p>
+        </div>
+    </div>
+</div>
+    
+
+
+</div>
+
+        
+
+
+
+
+
+<script src="https://cursos.ensbr.com/aos.js"></script><script>AOS.init({ duration:800 });</script>
+
+
+
+<script language="javascript">
+function validacpf(){
+if(valida_cpf(document.getElementById('cpf').value))
+	return true;//alert('CPF válido');
+else
+	alert('CPF inválido, digite-o corretamente'); cpf.value = "";
+	}
+			
+function valida_cpf(cpf){
+  var numeros, digitos, soma, i, resultado, digitos_iguais;
+  digitos_iguais = 1;
+  if (cpf.length < 11)
+		return false;
+  for (i = 0; i < cpf.length - 1; i++)
+	if (cpf.charAt(i) != cpf.charAt(i + 1))
+ {
+ digitos_iguais = 0;
+ break;
+ }
+  if (!digitos_iguais)
+		{
+		numeros = cpf.substring(0,9);
+		digitos = cpf.substring(9);
+		soma = 0;
+		for (i = 10; i > 1; i--)
+ soma += numeros.charAt(10 - i) * i;
+		resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
+		if (resultado != digitos.charAt(0))
+		return false;
+		numeros = cpf.substring(0,10);
+		soma = 0;
+		for (i = 11; i > 1; i--)
+ soma += numeros.charAt(11 - i) * i;
+		resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
+		if (resultado != digitos.charAt(1))
+        return false;
+		return true;
+		}
+  else
+		return false;
+}
+</script>
+
+
+
+
+<script>
+$(function() {
+if (localStorage.getItem("cpf") == "true") {
+    $("#login").hide();
+    $("#conteudo").show();
+}
+else {
+    $("#conteudo").hide();
+    $("#login").show();
+}
+
+$(".modal-window").click(function() {
+        if (localStorage.getItem("cpf") == "true") {
+            $("#login").hide();
+            $("#conteudo").show();
+        }
+        else {
+            $("#conteudo").hide();
+            $("#login").show();
+        }
+    });
+});
+</script>
+
+<script type="text/javascript">
+    $("#formCadastro").on("submit", function(event){
+        event.preventDefault();
+
+        var form = $('#formCadastro')[0];
+        var data = new FormData(form);
+
+        $.ajax({
+            url: "https://ensbr.com/app/ae-login.php",
+            type: "post",
+            data: data,
+            contentType: false,
+            cache: false,
+            processData: false,
+        }).done(function(retorno) {
+            var dados = JSON.parse(retorno);
+
+            if (dados.sucesso == true) {
+                localStorage.setItem("cpf", true);
+
+                document.location.reload(true);
+            } else {
+                alert(dados.msg);
+            }
+        }).fail(function(jqXHR, textStatus, msg) {
+            alert(msg);
+        });
+    });
+</script>
+
+</body>
+</html>
