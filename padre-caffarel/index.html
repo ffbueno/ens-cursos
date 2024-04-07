@@ -37,7 +37,7 @@
 </style>
 </head>
 <body>
-<div id="loader"><span class="loader"></span></div>
+<div id="preloader" style="display:none"><div class="inner"><div class="bolas"><div></div><div></div><div></div></div></div></div>
 
 
 <div class="container-fluid" style="padding-bottom:100px">
@@ -134,7 +134,7 @@
                 event.stopPropagation();
             } else {
                 // Se todos os campos estiverem preenchidos, exibimos a div do loader
-                document.getElementById('loader').style.display = 'block';
+                document.getElementById('preloader').style.display = 'block';
             }
 
             // Marca o formulário como submetido
