@@ -257,7 +257,7 @@ input[type='checkbox'] {display:none;}
 .lbl-toggle {display:block; text-transform:uppercase; padding:1rem 0.7rem 0 1.4rem; color:#1c2f6e; background:#fff; cursor:pointer; border-radius:10px; transition:all 0.25s ease-out; margin:20px 20px 0 20px; box-shadow:rgba(15, 20, 31, 0.15) 0px 0px 18px 0px;}
 .lbl-toggle::after {content:' '; display:inline-block; vertical-align:middle; transition:transform .2s ease-out; margin:0 0 0 6px}
 .collapsible-content {max-height:0px; overflow:hidden; transition:max-height .15s ease-in-out; box-shadow:rgba(15, 20, 31, 0.15) 0px 0px 18px 0px; border-bottom-left-radius:10px; border-bottom-right-radius:10px; margin:0 20px 32px 20px;}
-.toggle:checked + .lbl-toggle + .collapsible-content {max-height:8250px; height:auto}
+.toggle:checked + .lbl-toggle + .collapsible-content {max-height:999999999px; height:auto}
 .toggle:checked + .lbl-toggle {border-bottom-right-radius:0; border-bottom-left-radius:0;}
 .collapsible-content .content-inner {background:#fff; border-bottom-left-radius:10px; border-bottom-right-radius:10px; padding:2rem}
 .content-inner p, li {font-size:1.5rem; margin-bottom:1.4rem; padding-left:0; text-align:justify}

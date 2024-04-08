@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" href="../css/normalize.css">
-<link rel="stylesheet" href="../css/hot.css?v=1.2">
+<link rel="stylesheet" href="../css/hot.css?v=1.21">
 <link rel="stylesheet" href="../css/aos.css">
 <script src="../js/jquery.min.js"></script>
 <style>
@@ -29,19 +29,18 @@
         75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
         100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}}
 
-.toggle:checked + .lbl-toggle + .collapsible-content{max-height:999999999px}
 .lbl-toggle{margin:15px 7px 0 7px; padding:1rem 1.4rem 0 1.4rem}
 .lbl-toggle h4{margin-bottom:-4px}
 .collapsible-content{margin:0 7px 32px 7px}
 .content-inner ul {margin-left:-25px}
 .content-inner label {font-size:1.3rem}
-.border{padding:15px; border:1px solid #777; margin-bottom:20px; font-size:1.7rem; font-family:serif; font-style:italic; text-align:left}
+.border{padding:17px; border:1px solid #ddd; margin-bottom:25px; font-size:1.7rem; font-family:serif; font-style:italic; text-align:left; background-color:#fff; box-shadow:0px 5px 10px 0px rgba(0,0,0,0.11); border-radius:4px}
 .border .fonte{text-align:right; font-size:1.4rem; margin-top:15px}
 .border h2{color:#000; display:inline-block; line-height:1rem; margin-bottom:-5px; font-weight:bolder; }
 .bi-quote{margin-right:24px}
 .bi-end{margin-left:7px}
-.bi-quote::before{content:""; position:absolute; background-image: url(../img/q-abre.svg); width:15px; height:15px; background-size:contain; background-repeat:no-repeat}
-.bi-end::after{content:""; position:absolute; background-image: url(../img/q-fecha.svg); width:15px; height:15px; background-size:contain; background-repeat:no-repeat}
+.bi-quote{display:inline-block;margin:0; background-image: url(../img/q-abre.svg); width:18px; height:15px; background-size:contain; background-repeat:no-repeat}
+.bi-end{display:inline-block;margin:0; background-image: url(../img/q-fecha.svg); width:16px; height:15px; background-size:contain; background-repeat:no-repeat}
 button.button-primary{word-wrap:break-word; height:auto; line-height:1; padding:13px 17px; border-radius:70px; font-size:1.4rem}
 </style>
 </head>
@@ -124,12 +123,12 @@ button.button-primary{word-wrap:break-word; height:auto; line-height:1; padding:
 
 
 <div id="citacoes">
-	<form class="col-md-6 col-xl-4 mx-auto mb-3">
+	<form class="col-md-6">
         <input type="text" class="form-control" placeholder="Digite para procurar...">
 		<br><button type="submit" class="button-primary">Procurar</button>
 	</form>
-<div class="border"><div>
-    <div class="quote"><i class="bi-quote"></i> Se todas as famílias cristãs estivessem convencidas da importância da Oração Conjugal, se em todas essas famílias, a Oração Conjugal estivesse viva, haveria no mundo um prodigioso crescimento de alegria, de amor e de graça. <i class="bi-end"></i></div>
+                    <div class="border"><div>
+                <div class="quote"><i class="bi-quote"></i> Se todas as famílias cristãs estivessem convencidas da importância da Oração Conjugal, se em todas essas famílias, a Oração Conjugal estivesse viva, haveria no mundo um prodigioso crescimento de alegria, de amor e de graça. <i class="bi-end"></i></div>
 				<div class="fonte">Pe. Henri Caffarel - A Oração Conjugal - Texto Base do MENS 2020, pag. 99</div>
 			</div></div>
 						<div class="border"><div>
@@ -1632,7 +1631,7 @@ button.button-primary{word-wrap:break-word; height:auto; line-height:1; padding:
 $(function() {
 	$('#citacoes form').submit(function(){
 		var q = $('#citacoes form input').val();
-		if (q.length > 3) {
+		if (q.length > 2) {
 			$('.quote').parents('.border').hide();
 			$('.quote:contains("'+q+'")').parents('.border').show();
 		}
@@ -1649,6 +1648,7 @@ $(function() {
 		return false;
 	});
 });
+
 </script>
 
 
