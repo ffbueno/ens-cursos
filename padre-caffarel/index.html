@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" href="../css/normalize.css">
-<link rel="stylesheet" href="../css/hot.css?v=1.1">
+<link rel="stylesheet" href="../css/hot.css?v=1.2">
 <link rel="stylesheet" href="../css/aos.css">
 <script src="../js/jquery.min.js"></script>
 <style>
@@ -29,11 +29,20 @@
         75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
         100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}}
 
+.toggle:checked + .lbl-toggle + .collapsible-content{max-height:999999999px}
 .lbl-toggle{margin:15px 7px 0 7px; padding:1rem 1.4rem 0 1.4rem}
 .lbl-toggle h4{margin-bottom:-4px}
 .collapsible-content{margin:0 7px 32px 7px}
 .content-inner ul {margin-left:-25px}
 .content-inner label {font-size:1.3rem}
+.border{padding:15px; border:1px solid #777; margin-bottom:20px; font-size:1.7rem; font-family:serif; font-style:italic; text-align:left}
+.border .fonte{text-align:right; font-size:1.4rem; margin-top:15px}
+.border h2{color:#000; display:inline-block; line-height:1rem; margin-bottom:-5px; font-weight:bolder; }
+.bi-quote{margin-right:24px}
+.bi-end{margin-left:7px}
+.bi-quote::before{content:""; position:absolute; background-image: url(../img/q-abre.svg); width:15px; height:15px; background-size:contain; background-repeat:no-repeat}
+.bi-end::after{content:""; position:absolute; background-image: url(../img/q-fecha.svg); width:15px; height:15px; background-size:contain; background-repeat:no-repeat}
+button.button-primary{word-wrap:break-word; height:auto; line-height:1; padding:13px 17px; border-radius:70px; font-size:1.4rem}
 </style>
 </head>
 <body>
@@ -63,9 +72,9 @@
 
 <div class="wrap-collapsible">
   <input id="collapsible2" class="toggle" type="checkbox">
-    <label for="collapsible2" class="lbl-toggle"><h4>Causa de Canonização do <b>Padre Caffarel</b></h4></label>
-  <div class="collapsible-content"><div class="content-inner"><p>O cardeal André VINGT-TROIS, arcebispo de Paris, recebeu com bondade, no dia 25 de abril de 2006, o desejo das Equipes de Nossa Senhora de promover a causa da canonização do Padre Henri Caffarel. "Os Amigos do Padre Caffarel" buscam esta canonização porque:</p>
-      <ul><li>Sua santidade é um "profeta do trigésimo século"</li><li>Sua santidade aparece em sua vida, toda animada pelo Senhor.</li><li>A sua santidade manifesta-se na fidelidade do seu amor pela Igreja.</li></ul><p>Faça a sua adesão/renovação à Causa de Canonização do <b>Padre Caffarel</b>:</p><a href="https://www.ens.org.br/pe-caffarel/adesao/renovacao-a-causa-de-canonizacao" target="_blank"><button class="button-primary">Adesão on-line</button></a></div>
+    <label for="collapsible2" class="lbl-toggle"><h4>Adesão/Renovação<br>Causa de Canonização do <b>Padre Caffarel</b></h4></label>
+  <div class="collapsible-content"><div class="content-inner"><p>O cardeal André Vingt-Trois, arcebispo de Paris, recebeu com bondade, no dia 25 de abril de 2006, o desejo das Equipes de Nossa Senhora de promover a causa da canonização do Padre Henri Caffarel. "Os Amigos do Padre Caffarel" buscam esta canonização porque:</p>
+      <ul><li>Sua santidade é um "profeta do trigésimo século"</li><li>Sua santidade aparece em sua vida, toda animada pelo Senhor.</li><li>A sua santidade manifesta-se na fidelidade do seu amor pela Igreja.</li></ul><p>Faça a sua adesão/renovação à Causa de Canonização do <b>Padre Caffarel</b>:</p><a href="https://www.ens.org.br/pe-caffarel/adesao/renovacao-a-causa-de-canonizacao" target="_blank"><button class="button-primary">Adesão/Renovação on-line</button></a></div>
   </div>
 </div>
 
@@ -106,26 +115,1500 @@
     </div>
   </div>
 </div>
+
+
+<div class="wrap-collapsible">
+  <input id="collapsible4" class="toggle" type="checkbox">
+    <label for="collapsible4" class="lbl-toggle"><h4>Citações do <b>Padre Caffarel</b></h4></label>
+  <div class="collapsible-content"><div class="content-inner">
+
+
+<div id="citacoes">
+	<form class="col-md-6 col-xl-4 mx-auto mb-3">
+        <input type="text" class="form-control" placeholder="Digite para procurar...">
+		<br><button type="submit" class="button-primary">Procurar</button>
+	</form>
+<div class="border"><div>
+    <div class="quote"><i class="bi-quote"></i> Se todas as famílias cristãs estivessem convencidas da importância da Oração Conjugal, se em todas essas famílias, a Oração Conjugal estivesse viva, haveria no mundo um prodigioso crescimento de alegria, de amor e de graça. <i class="bi-end"></i></div>
+				<div class="fonte">Pe. Henri Caffarel - A Oração Conjugal - Texto Base do MENS 2020, pag. 99</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O teu amor sem exigência me diminui; a tua exigência sem amor me revolta; o teu amor exigente me engrandece. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L’Anneau d’Or mai-ago 1956</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Na origem da Espiritualidade Conjugal há um apelo de Cristo: Para nós esposos, a nossa vocação é irmos juntos para Cristo, um e outro, um com o outro, um pelo outro. <i class="bi-end"></i></div>
+				<div class="fonte">Pe. Henri Caffarel -  Espiritualidade Conjugal, pag. 38</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Uma das razões da Oração conjugal é conservar entre nós a graça do matrimônio. É um pouco como se, todas as noites, repetíssemos o sim sacramental. <i class="bi-end"></i></div>
+				<div class="fonte">Pe. Henri Caffarel</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Pois sejam vocês, casais, os missionários desta espiritualidade conjugal que lhes dá vida. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal outubro 1950 - Profeta do Matrimônio, pag. 57</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Eu gostaria que vocês ao irem para a oração, estivessem profundamente convencidos que estão sendo esperados pelo Pai, pelo Filho e pelo Espírito Santo. <i class="bi-end"></i></div>
+				<div class="fonte">Pe. Henri Caffarel - Orar 15 dias com Henri Caffarel, pag. 34</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Essa é uma lei fundamental do amor, de todo amor - seja do amor a Deus ou do amor conjugal: Ele não é verdadeiro se não é vivo, impaciente pelo bem e pela felicidade do outro. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 113</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Sejam felizes: o Senhor aguarda este louvor, e os que os cercam, esse testemunho. <i class="bi-end"></i></div>
+				<div class="fonte">Pe. Henri Caffarel - A Missão do Casal Cristão, pag. 20 - Paris 25/12/1945</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Dar-se um ao outro para ambos darem-se juntos, eis a vocação e a missão do casal cristão. <i class="bi-end"></i></div>
+				<div class="fonte">Pe. Henri Caffarel</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> A Espiritualidade Conjugal é a arte de viver no casamento o ideal evangélico que Cristo propõe a todos os seus discípulos. <i class="bi-end"></i></div>
+				<div class="fonte">Pe. Henri Caffarel</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> “Não há melhores militantes para a Igreja e para a Cidade do que aqueles que, em primeiro lugar, militam em seu lar, pelo triunfo do amor e da graça”. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 33</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> As leis da gravidade nem sempre tem a última palavra diante das energias do Cristo ressuscitado. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 08</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Uma vez que o lar não está isolado na cidade ou na igreja, esta espiritualidade conjugal e familiar é também uma espiritualidade do compromisso do casal com as atividades humanas e eclesiais. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L’Anneau d’Or nº 84</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O amor dos esposos, com seus encantamentos, suas agonias, suas ressurreições, é a imagem transparente, a 'parábola' do amor entre Deus e seu povo, entre Deus e cada um de seus filhos e filhas. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 09</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Não é com Cristo de vinte séculos atrás que nos relacionamos, em vez de nos relacionarmos com o Cristo de hoje? <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 26</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Se essa não é a mais alta forma de amor, certamente é uma das mais altas, essa avidez pelo pensamento do outro. <i class="bi-end"></i></div>
+				<div class="fonte">Pe. Henri Caffarel - Nas Encruzilhadas do Amor, pag. 18</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Se nos encontrarmos realmente com Deus, nossa vida muda para sempre e torna-se impossível para nós não comunicá-lo. <i class="bi-end"></i></div>
+				<div class="fonte">Pe. Henri Caffarel</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O matrimônio é a admirável invenção de Cristo para que a Eucaristia seja vivida a dois. <i class="bi-end"></i></div>
+				<div class="fonte">Pe. Henri Caffarel</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Basta que existam alguns milhares, algumas centenas de milhares de pequenos lares de oração em nosso mundo e o semblante do planeta terá mudado. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Centelhas de sua Mensagem, pag. 91</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O casamento seria uma armadilha que deveria ser evitado se não fosse um meio de chegar à perfeição do amor de Deus. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Viver a Missão com Alegria - Texto Base ENS 2016, pag. 34</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Quero dizer que é preciso defender, manter, aprofundar o amor conjugal, pois, você sabe muito bem, o amor não é uma sorte grande caída do céu, mas uma conquista cotidiana. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 32</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Essa voz que ouço ao ler o Evangelho é a mesma que acalmava a tempestade furiosa, que curava a lepra, a mesma que ressuscitava os mortos, que perdoava os pecados, que gerava filhos de Deus. <i class="bi-end"></i></div>
+				<div class="fonte">Pe. Henri Caffarel - Carta Mensal janeiro 1964</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Sois chamados à santidade. E é no e pelo casamento que deveis caminhar para ela. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Viver a Missão com Alegria - Texto Base ENS 2016, pag. 34</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Para os casais que procuram construir a sua espiritualidade, não se trata de se evadirem do mundo, mas sim de aprenderem como, a exemplo de Cristo, podem servir a Deus em toda a sua vida e em meio ao mundo. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel, editorial Carta Mensal 1950</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Contar com a tentação é realismo. Saber-se vulnerável é humildade. Pensar que seu cônjuge também é vulnerável, é bom senso. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 31</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> As leis do encontro entre marido e mulher são as mesmas da relação entre o cristão com seu Deus na oração. Essa relação deteriora-se quando a habilidade toma o lugar da invenção. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 55</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Assim como ninguém se torna marceneiro, músico, escritor da noite para o dia, tampouco se torna pessoa de oração sem um aprendizado consciencioso. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal set-out 1970</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O amor conjugal une os esposos ao nível do seu eu cristão, faz deles 'um só coração e uma só alma'. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Com ares de superioridade, o perdão gera revolta; reticente, oprime; sem amor, não pode libertar, nem salvar. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 75</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Quando acharmos que é preciso fazer uma repreensão a alguém que amamos, se o amor não preceder a repreensão, estamos apenas fazendo crescer o mal naquele que pretendemos curar. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 73</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Saber precisar daquele a quem damos tudo, aí está a grande perfeição do amor. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 82</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Amar alguém é ambicionar não tanto contentá-lo plenamente, mas fazê-lo crescer, e portanto provocá-lo a sair de si mesmo, a se superar, a se gastar, a se doar, em uma palavra: a amar. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 81</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Pois bem, amar é respirar, inspirar e expirar, dar e receber. O amor morre asfixiado quando este ritmo não é respeitado. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 80</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Um dia, numa pequena aldeia do Oriente Próximo, uma jovenzinha radiosa intuiu que consagrar a Deus sua virgindade seria uma maneira de honrá-lo melhor que as hecatombes de cordeiros e de touros imolados no templo de Jerusalém. E Deus visitou-a, e por ela deu-nos o Salvador. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 88</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Decidir não fazer mais pela pessoa que se ama: aí está, tenho certeza, não apenas o sinal, mas, em primeiro lugar, a causa do declínio do amor. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 112</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Para o amor verdadeiro não existe jamais o repouso. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 113</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Um lar de buscadores de Deus é, em um mundo que não acredita mais em Deus, que não acredita mais no amor, uma teofania: uma manifestação de Deus como foi para Moisés aquela sarça do deserto que ardia sem se consumir. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - discurso em 15/05/1970 em Roma</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> É preciso que, como as crianças, saibamos ficar surpresos e maravilhados diante de quem amamos. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 16</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Meu olhar sabe discernir a dimensão divina dos seres que me cercam e dos acontecimentos? Eu me explico com alguns exemplos: no ônibus ou no trem, esta multidão obscura, pesada, oprimida você a olha com o olhar de Cristo? <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal dezembro 1956</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Por mais importantes que sejam nossas atividades profissionais, sociais, que podem elas significar em comparação com todas as atividades somadas dos descendentes de um só de seus filhos? <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 85</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Pois é preciso relembrar sempre esta verdade básica: quem vem para receber volta de mãos vazias; quem vem para dar, encontra. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal dezembro 1948</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Tudo se resume em saber se é vital comer, tudo se resume em saber se é vital rezar. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal novembro 1952</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Nenhum discurso sobre Deus é mais eloquente e persuasivo do que o espetáculo de cristãos que são um como o Pai e o Filho são um. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L'Anneau d'Or, agosto 1956</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Devemos ousar dizer aos casais que só existe salvação para o amor e para a família na caridade de Cristo. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> É claro que eu creio na necessidade de engajamento, mas creio, também, ou melhor, constato todos os dias, que o marido ou a mulher, que não se apóia sobre um amor sólido como a rocha, é terrivelmente vulnerável na ação. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 33</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Que o amor de vocês seja paciente, como a paciência do agricultor que confia nas estações. Assim, a sua exigência de amor dará frutos. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L’Anneau d’Or mai-ago 1956</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> No meu lar, na minha paróquia, na minha profissão, no meu país, na Igreja, sou um parasita ou um bom operário? <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Editorial Carta Mensal Dezembro 1948</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Os pastores de todos os tempos sempre adivinharam o esplendor de Deus ao contemplar, à noite, o céu fervilhante de estrelas, pois 'os céus anunciam a glória de Deus.'. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 120</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> A Palavra de Cristo no Evangelho não somente é ensinamento, mandamento, declaração de amor, mas é ato. Ele opera. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal janeiro 1964</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Vocês têm em casa uma Bíblia em imagens, se assim posso dizer. Ah! Se vocês a folheassem! Estou falando de todas essas realidades familiares que fazem parte de sua vida: o amor conjugal, a paternidade, a maternidade, os filhos, a casa... tudo isso que Deus encontrou de mais explícito para se dar a conhecer. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 122</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O casal de Nazaré é o exemplo que se propõe a todo casal... Se esposos cristãos não se esquivarem da pedagogia divina que age em sua vida como agiu no casal Maria e José, Deus os conduzirá. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Pe Caffarel Profeta do Matrimônio - SRB 2009, pag. 65</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Quero convidá-los a fazer o que for necessário para que a espiritualidade conjugal e familiar que vocês buscam nas Equipes de Nossa Senhora, chegue aos casais que os cercam, fortaleça sua união que talvez esteja trincando, reanime seu amor, lhe revele as riquezas do sacramento do matrimônio. <i class="bi-end"></i></div>
+				<div class="fonte">Pe. Henri Caffarel</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Quando aqueles que se amam teimam em partir sempre de novo para a descoberta do cotidiano do outro, fazem a experiência de um amor vivo e jovem, novo cada dia, e sua união ganha solidez à medida que se aprofunda. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 26</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> A todo instante [Deus] está olhando para você com infinita ternura. Por favor! Não passe todo o tempo da oração a se lamentar e a se arrepender! E não recuse a Deus a alegria de ter o filho que Ele ama e quer acarinhar. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 30</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> São os sins da velhice, no entardecer de uma vida de fidelidade, que exprimem o consentimento perfeito de dois seres um para o outro e complementam esta união que é sua obra e sua recompensa. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - revista L'Anneau d'or maio 1956</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Os adultos somente serão dignos de estima se trabalharem para o verdadeiro bem da geração que vem, e não para o conforto da geração atual. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal maio-junho 1971</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Vocês formam grupos para procurar Cristo, imitá-lo, servi-lo. Vocês não conseguirão sem um guia. E não há melhor guia do que a Virgem. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal maio 1949</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> E é precisamente isto que é tão grave aos olhos de Deus: que o filho mais velho se escandalize com a misericórdia [do pai], que não veja nela senão uma falta de dignidade, um insulto à justiça. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Cahiers sur L'oraison julho 1961</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O exercício da fé e da caridade deveria ser tão natural e tão tranquilo quanto a respiração. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - carta mensal set/out 1970</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Deixe espaço para a oração, o espaço todo. Que a oração possa assumir todas as fibras de seu ser, assim como o fogo penetra na madeira e a deixa incandescente. <i class="bi-end"></i></div>
+				<div class="fonte">Pe. Henri Caffarel - L'Anneau d'or mai/ago 1967</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Exercite sua fé. Não lhe peço que fique especulando sobre Deus, mas que pense nEle, meditando no que Ele diz de si mesmo por meio da Criação... <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - carta mensal set/out 1970</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Os casais que se agrupam para se iniciarem na espiritualidade, longe de buscar os meios para fugir do mundo, esforçam-se para aprender como, a exemplo de Cristo, servir a Deus por toda a sua vida e em pleno mundo. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - carta mensal junho 1950</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Toda a vida da Virgem-Mãe, compromissada pelo Sim da anunciação, foi uma contínua ascensão de amor. Portanto, será junto a ela que os casais cristãos aprenderão a pronunciar uma primeira vez, e depois durante toda a vida, o Sim, essa grande palavra de seu amor. <i class="bi-end"></i></div>
+				<div class="fonte">Pe. Henri Caffarel - L'Anneau d'or maio 1956</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> E quando os jornais trazem esses eventos mundiais, cruéis, desconcertantes, inquietantes, sua fé lhe diz que Cristo é vencedor, que Ele conduz a história com mão de mestre e que seu amor irrepreensível e infalível não pode ser frustrado pelos homens? <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal dezembro/1956</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Uma equipe definha quando seus membros perdem o espírito de sacrifício. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal abr/mai 1957</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> É do seu amor conjugal, do fato de serem casais, que o mundo ateu, sem o suspeitar, espera um testemunho essencial. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Roma 5/5/1970</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> No dia em que se decide não fazer mais pela felicidade do outro, achando que já se fez o suficiente, nesse dia o amor está condenado, talvez se deva mesmo dizer que morreu. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 113</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Os cristãos cuja fé é pura, cujo olhar é simples, não têm dificuldade em descobrir esta misteriosa presença de Cristo no seu sacerdote. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> A vida cristã integral não é somente adoração, louvor, ascese, esforço de vida interior. É também serviço de Deus, no lugar por Ele designado: família, profissão, cidade.. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal junho 1950</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Escutar não é apenas exercício de inteligência. A palavra 'escutar' não significa uma atividade solitária, mas um encontro, uma troca, coração a coração: a oração é essencialmente isso. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Caderno sobre a Oração, 1966</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Penso não estar fazendo um julgamento temerário ao afirmar que os melhores casais cristãos, aqueles que não deixam nunca seu dever de se ajoelhar, frequentemente se dispensam do dever de se sentar. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 90</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O casal não tem condição de ser a fonte de onde jorra vida familiar a não ser na medida em que todos os dias se abra às bênçãos de Deus pela oração conjugal. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Casamento, este Grande Sacramento - 1963</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O verdadeiro amor, longe de confiscar os corações, os liberta e os dilata de forma extraordinária. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L'Anneua d'Or mai/ago 1964</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> É preciso cada dia partir ao encontro do outro, por caminhos desconhecidos, tentando adivinhar a vida profunda do parceiro, procurando o que poderá despertar sua atenção, seu interesse, sua ternura, evitando o que de momento o incomoda ou cansa, descobrindo afinal o que pode estabelecer a comunhão. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 54</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Não pode haver uma verdadeira moralidade da sexualidade se não houver uma qualidade da sexualidade. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Chantilly (França) - 03/05/1987</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> A Eucaristia na alma de quem não ora, não passa de semente em terra não lavrada: não pode produzir frutos. <i class="bi-end"></i></div>
+				<div class="fonte">Pe. Henri Caffarel - Carta Mensal novembro 1952</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Como é pobre, em certo sentido, o apóstolo isolado diante do lar apóstolo. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal jan 1962</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Façam uma peregrinação às fontes de seu amor, reconsiderem o ideal entrevisto quando juntos, com passos alegres, começaram a caminhada. Renovem seu fervor. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel -  Nas Encruzilhadas do Amor, pag. 92</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Quando casais exercitam o seu amor fraterno, aos poucos, seu coração se dilata. E, passo a passo, seu amor conquista a casa, o quarteirão, o país. <i class="bi-end"></i></div>
+				<div class="fonte">Pe. Henri Caffarel - L'Anneau d'or maio 1956</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> A santidade até há pouco parecia exigir a fuga do mundo, mas agora sempre mais reivindica seu lugar no coração do mundo. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - O Amor e a Graça, pag. 242</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> “Só ajudarão seus filhos de uma maneira eficaz a serem verdadeiros discípulos de Cristo, se os amares à maneira de Cristo.”. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel – O Amor e a Graça, pag. 85</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Ocupar-se com Deus jamais significa esquecer os nossos; o que damos a Deus nunca é tirado dos outros. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Orar 15 dias com Henri Caffarel, pag. 79</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Quando um lar reconhece a Deus pelo que Ele é, não consigo imaginar que ali não exista nenhum desejo de lhe oferecer um ou mais filhos. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 87</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Casais, seus filhos têm uma necessidade imperiosa do seu amor: foi ele que os fez nascer, e somente ele poderá fazê-los crescer. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Textos Escolhidos SRB 2009, pag. 48 (Carta Mensal, França março 1952)</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Mais do que uma comunidade, a vida cristã é uma comunhão. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L'Anneau d'or 56 - abril 1954</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O impulso do Espírito haverá de nos levar e animar, quer estejamos a caminhar, ou a trabalhar, ou a falar. Ou até mesmo a dormir. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Orar 15 dias com Henri Caffarel, pag. 93</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Desejaria que cada um de vocês consagrasse ao menos cinco minutos por dia à leitura do Evangelho. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Centelhas de sua Mensagem, pag. 74</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Amem-se: quando a caridade cresce em seu lar, cresce também na Igreja, da qual é célula viva. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - A Missão do Casal Cristão, pag. 20 - 1¤ editorial - 25/12/1945</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> A ação apostólica do lar é exercida para fora e para dentro... É o lar cristão, posto avançado da comunidade eclesial. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - A Missão do Casal Cristão, pag. 162 (dezembro/1960)</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Sem intimidade, sem progresso na intimidade, não há progresso no amor, o casal fica ameaçado. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Conferência sobre Oração 1972 Brasil - boletim Amigos Pe Caffarel janeiro/2017, pag. 14</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> É indispensável crescer na convicção de que cada casal faz parte de uma história humana maior, a história de todos os homens de todas as regiões da terra, sua história passada, a presente e a futura. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Amor e Casamento - 1997 - Pontes Sim, Muros Não - pag. 116</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Mas o mais importante não é pensar muito, mas amar muito. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal set-out 1970</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Seja o conjunto de nossas Equipes uma catedral para a glória de Nossa Senhora. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal maio 1949</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Felizes os casais suficientemente humildes que decidem não perder de vista esse lar onde Cristo cresceu. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Recebe Maria como tua Esposa, pag. 177</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Que no seu lar, Nossa Senhora seja para vocês uma Mãe honrada e querida. <i class="bi-end"></i></div>
+				<div class="fonte">Pe. Henri Caffarel - A Missão do Casal Cristão, pag. 20 - 1¤ editorial - 25/12/1945</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O amor fraterno tem uma excepcional fecundidade. Em sua volta, o mal regride, o deserto passa a florescer. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L'Anneau d'Or - agosto 1956</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Respirai a plenos pulmões, amai a pleno coração! A alma, como o corpo, precisa refazer-se, renovar-se; ora, é o amor que recria a alma. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal julho 1955 - Textos Escolhidos SRB 2009, pag. 71</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Aquele que não tende à perfeição desliza, inevitavelmente, para a mediocridade. A essência da perfeição consiste no amor. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta a João XXIII (1959) - A Missão do Casal Cristão, pag. 41</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Procuremos juntos, unamos nossos esforços e partamos para a descoberta. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Roma (maio/1959) - A Missão do Casal Cristão, pag. 49</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> De uma oração conjugal verdadeira jorra viva e rica a oração familiar. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Orar 15 dias com Pe Caffarel, pag. 32</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Assumimos as nossas responsabilidades. Rezem, reflitam e assumam as suas. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta de Fundação ENS - 08/12/1947</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> No lar que não perde tempo parando e refletindo, muitas vezes se introduz a desordem material e moral. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 90</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Que Deus seja em sua casa o primeiro a ser buscado, a ser amado, a ser servido. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - A Missão do Casal Cristão, pag. 19 - 1¤ editorial - 25/12/1945</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O verdadeiro lar cristão não pode deixar de estar animado por uma ardente aspiração missionária. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta a João XXIII (1959) - A Missão do Casal Cristão, pag. 45</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Amar é dar-se, sem reserva, sem interrupção, num impulso de alegre generosidade. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L'Anneau d'Or 138 - Orar 15 dias com Henri Caffarel, pag. 102</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Creio fortemente que o amor humano fala do amor de Deus, como uma espécie de parábola. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Entrevista 15/03/1973 - Carta Mensal abril 2015, pag. 17</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O amor declina se não cresce: será preciso reconquistá-lo e enriquecê-lo a cada dia. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - O Amor e a Graça, pag. 157</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Deus deu ao homem sentidos corporais para entrar em relação com o mundo sensível; faculdades intelectuais para entrar em relação com o mundodas ideias; um coração, por fim, para entrar em relação com Ele. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - 5 Encontros sobre a Oração Interior, pag. 10</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Não há família sem a Igreja, tampouco há Igreja sem a família cristã. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta a João XXIII (1959) - A Missão do Casal Cristão, pag. 46</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O homem e a mulher possuem a mesma natureza humana, portanto são iguais, mas possuem-na em modalidades distintas e, portanto, são complementares. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carisma Fundador (1987), pag. 21</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Para o Cristo, viver é orar. Alcance-o, apreenda, aproprie-se de sua oração. Deixe essa oração apanhar você, invadir você, elevar você e levar você ao Pai. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L'Anneau d'or mai-ago 1967 - Profeta do Matrimônio SRB 2009, pag. 16</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Vocês estão certos em querer apresentar aos não-crentes a face alegre e forte do amor e da fé. Não esqueçam, contudo, que a Paixão precede a Ressurreição, que a alegria é fruto da cruz. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal 1948 - Profeta do Matrimônio SRB 2009, pag. 40</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Orar consiste em estar disponível, em atitude de acolhimento, presente a Deus presente. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 20</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Quando nosso ser profundo se volta para Deus e se entrega a Ele, livre e deliberadamente, é então que se faz uma oração verdadeira, mesmo se a nossa sensibilidade está inerte, nossa reflexão é pobre e nossa atenção sujeita a distrações. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Orar 15 dias com Henri Caffarel, pag. 45</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O amor de Deus definha na alma do cristão que não reservar a cada dia momentos de encontro com o Senhor, momentos de troca, de intimidade, ou seja, de oração. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal novembro 1952</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Tu, que habitas no fundo de meu coração, permite-me chegar a Ti, no fundo de meu coração. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Orar 15 dias com Henri Caffarel, pag. 105</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O Cristo não veio julgar e condenar. Veio salvar e resgatar. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 72</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> A oração conjugal é um desses momentos privilegiados em que o lar se abre à ação do Espírito Santo. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Orar 15 dias com Henri Caffarel, pag. 27</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Que devemos fazer de nossa equipe para que ela se pareça mais com a equipe que Jesus reuniu em torno dele, que ele formou e transformou no dia de Pentecostes? <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Palestra Brasil 1972 - Palestras e Conferências, pag. 70</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> A vocação do cristão é antes de tudo a de existir como cristão, mas o cristão não recebe a salvação a não ser no interior do povo. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Palestra Brasil 1972 - Palestras e Conferências, pag. 61</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> “Faz falta que, vendo como vive um casal cristão, todos os homens e mulheres que aspiram ao amor humano compreendam que Cristo veio para salvar o amor.”. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - O Sacerdócio do Matrimônio, L’Anneau d’Or 111-112, mai-ago 1963 - Livro Tema de Estudo ENS 2018, pag. 39</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O cristão que quer rezar começa pois por se ajoelhar diante de sua Mãe orante. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - 5 Encontros sobre Oração Interior, pag. 119</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Amar como Ele [Jesus] amou consiste em uns dizerem aos outros o melhor do que pensam e o melhor do que vivem: o que sabemos e o que vivemos de Deus. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Centelhas de sua Mensagem, pag. 102</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Eu vos conclamo a empreender, a levar avante, uma ação sistemática, organizada. Fundar uma equipe em todos os pontos estratégicos do Brasil. Lançar sobre a vossa pátria uma imensa rede de que as Equipes sejam os nós. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Conferência no Brasil em 14/07/1957 - Carta Mensal Novembro 1987</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> É sempre delicado interrogar a vontade de Deus: há sempre o risco de fazê-la dizer o que nós desejaríamos. No entanto, nada é mais necessário. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - A Missão do Casal Cristão, pag. 48 (Roma - 1959)</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Sejam uma reparação pelos inúmeros lares que fecham suas portas a Cristo e nos quais o amor se apaga. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - A Missão do Casal Cristão, pag. 20 - 1¤ editorial - 25/12/1945</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Dá-se férias ao amor e o egoísmo assegura a interinidade. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal julho 1955 - Textos Escolhidos, pag. 71</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O lar onde se ama e que não esconde que deve esse amor a Cristo revelará ainda outra verdade fundamental: que onde Ele está presente, Cristo cura, reconcilia, traz a paz. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Palestra Brasil 1972 - Palestras e Conferências, pag. 45</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Se a união com Cristo é para vocês o essencial, e se as Equipes de Nossa Senhora lhes parecem ser o meio providencial para alcançá-lo, então eu lhes digo que as Equipes devem ocupar um lugar essencial nas suas vidas. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal fevereiro 1950</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Sois amados [por Deus] pessoalmente e não por uma espécie de amor anônimo, caso contrário, isso não seria amor; sois amados tal como sois, com o vosso bem e o vosso mal, com as vossas misérias, com as vossas virtudes. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Entrevista Radio Canada, 1980 - Boletim 22 Associação Amigos Pe Caffarel, pag. 12</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O Amor declina quando o conhecimento declina, que o amor permanece vivo quando o conhecimento permanece atual. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - 5 Encontros sobre a Oração Interior, pag. 12</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Há muito tempo que eu sonhava com um grande gesto dos casais cristãos, através do qual eles iriam expressar publicamente o seu reconhecimento a Deus por serem deste tempo a que foram concedidas as suas luzes. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Editorial da Carta Mensal de janeiro de 1954</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Cristo veio prender-nos a si a fim de nos conduzir consigo e em si ao Pai, de nos fazer penetrar no mais profundo do mistério de Deus. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - 5 Encontros sobre a Oração Interior, pag. 12</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Mais amor nos lares, mais caridade nas equipes e mais dinamismo missionário. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Vocação e Missão - Fátima 2018, pag. 34</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Quando não praticam a oração interior, os cristãos permanecem como presos a um estágio infantil. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L'Anneua d'Or - jan/fev 1949 - Textos Escolhidos, pag. 31</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Eu quisera que todos tivessem na mais alta estima a palavra sacerdotal e a solicitassem com interesse e convicção, para renovar e enriquecer a sua fé. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - O Amor e a Graça, pag. 248</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Que futuro não poderemos esperar para a Igreja se a mensagem luminosa de Cristo sobre o matrimônio pudesse chegar aos quatro cantos do mundo, se seduzisse os jovens casais em grande número e se animasse famílias em número sempre maior!. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Roma (maio/1959) - A Missão do Casal Cristão, pag. 66</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Façam o exame de consciência do lar, tomem as decisões práticas e oportunas para curar, consolidar, renovar, arejar, abrir o lar. Ponham nesse exame lucidez e sinceridade. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 92</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Às vezes nos encontramos frente a dois erros frequentes quando tratamos do apostolado, a Palavra sem ação e a ação sem Palavra. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L’Anneau d’Or, nº 109 - O leigo, portador da Palavra - jan-fev 1963</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Não há nada mais importante que fazer as famílias cristãs compreenderem que, pela hospitalidade e acolhida, exercem uma mediação insubstituível entre o mundo e a Igreja. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L'Anneau d'Or 107 - set/out 1962</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Comunidade de oração e comunidade missionária são como frente e verso do casal, comunidade de amor. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Vocação e Missão - Fátima 2018, pag. 11</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Você decide hoje, da manhã até a noite, você vai muito especialmente exercitar-se para ver todos os seres e todos os acontecimentos com os olhos da fé. Garanto que seu dia não será como os outros dias. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal dezembro 1956</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O amor nunca diz: 'Basta'. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 119</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Assim deve ser o cristão. Enquanto discípulo de Cristo, deve falar e atuar. Tem que ser o primeiro a ajudar os que sofrem, os que estão aflitos, os oprimidos. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L’Anneau d’Or nº 109 - O Leigo, portador da Palavra, jan-fev 1963</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Os verdadeiros filhos de Deus não apenas respondem ao chamado quando se faz ouvir, mas, animados por servi-Lo, vivem em uma atitude de disponibilidade. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 115</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Ser exigente não é tanto deleitar-se com os defeitos do outro quanto favorecer no coração, como se atiça uma chama, o crescimento na entrega a Deus e ao proximo. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L’Anneau d’Or mai-ago 1956</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Felizes aqueles que, ao longo de sua vida terrestre, sempre estiveram prontos para atender aos chamados divinos. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 119</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Seja, portanto, essa a sua ideia fixa: Fazer de sua equipe um sucesso de caridade. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L'Anneau d'Or - agosto 1956 - Profeta do Matrimônio, pag. 53</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Estejam sempre dispostos a responder e a partir, sem reclamar direitos, sem pedir atalhos, sem chegar tarde. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 115</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Por sua vida, por seu exemplo, por seu comportamento, o casal cristão deve proclamar a doutrina do matrimônio. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L'Anneau d’Or 111-112 mai-ago 1963</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Desejá-la [santidade] não é mais presunção, mas magnanimidade, e dispor-se para ela - por uma abertura habitual do nosso espírito ao Espírito Santo - é a própria exigência do nosso amor filial para com Deus. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Novas Cartas sobre a Oração, pag. 29</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Por isso convido vocês a renovar, mais do que nunca, esse voto de confiança na Virgem Maria. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - O Carisma Fundador, pag. 29</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Se Cristo não tivesse vindo à terra, se não tivesse amado os homens, poder-se-ia pensar que o amor de um Deus é uma realidade mais intimidadora que atraente e asseguradora. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - 5 Encontros sobre a Oração Interior - pag. 13</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O admirável, na relação com Deus, é saber, ter certeza, e nisso consiste a fé, que o Eu divino dá-me atenção total, neste momento. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 63</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Eu gostaria que em nossas Equipes se exercesse a fé na ternura todo-poderosa da Virgem; que cada casal sentisse aquela confiança e aquela segurança que habita o coração dos filhotes quando sua mãe está presente. <i class="bi-end"></i></div>
+				<div class="fonte">Pe. Henri Caffarel - Carta Mensal maio 1949</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> A oração cria o amor e o amor leva ao sacrifício. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Centelhas de sua Mensagem, pag. 108</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> As suas férias serão um tempo forte no ano, porque vocês terão feito delas um tempo para amar. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal julho 1955 - Textos Escolhidos, pag. 71</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Ó Tu, que habitas no fundo do meu coração, que a tua alegria jorre, no fundo do meu coração. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Profeta do Matrimônio, pag. 78</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Se já é verdade que para os filhos é uma grande sorte ter um pai e uma mãe que se amem, quão grande deveria ser a nossa felicidade por termos um Deus que é comunidade de amor, um sol em nosso céu!. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Centelhas de sua Mensagem, pag. 111</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Ninguém conversa com uma sombra. É preciso pois tomar consciência da presença de Deus para lhe falar. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Orar 15 dias com Henri Caffarel, pag. 95</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O casamento cristão não é somente o dom recíproco do homem e da mulher, é também o dom do casal a Cristo. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal abril 1968</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Amar é um risco. Pois o amor pode arrastar terrivelmente longe: adeus à tranquilidade confortável, às belas seguranças farisaicas desde que ele nos queimou com seu fogo. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 47</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> A oração me leva a compreender um pouco melhor a exigência deste amor de Cristo, amor terno e intransigente, amor zeloso. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - A Missão do Casal Cristão, pag. 130 (A Deus, 1973)</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Se as Equipes de Nossa Senhora não forem fermento de renovação na Igreja, serão postas de lado, para dar lugar a novos movimentos mais ousadamente revolucionários, capazes de trabalhar pelo 'aggiornamento' da Igreja.”. <i class="bi-end"></i></div>
+				<div class="fonte">Padre Henri Caffarel - Carta Mensal jun/jul 2013, pag. 38</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O casal maravilha-se em descobrir que, ao juntar seu SIM ao SIM de Maria, está colaborando com ela [Maria] e contribuindo em dar Cristo ao Pai e aos homens. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L’Anneau d’Or maio 1956 - Profeta do Matrimônio, pag. 65</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Finalmente e antes de mais nada procurem ver se Deus de fato é para vocês quem é servido em primeiro lugar. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 92</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Tu, que habitas no fundo de meu coração, faze-me viver de Ti, no fundo de meu coração. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Profeta do Matrimônio, pag. 79</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Não é por acaso que para se doar a nós, Cristo tomou o pão e não uma iguaria rara: o pão é alimento quotidiano. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal março 1958 - Textos Escolhidos, pag. 20</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Ser um SIM para Deus: eis o maior anelo de uma alma realmente dada à oração. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Novas Cartas sobre Oração, pag. 62</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Tendes fome. Pedi pois a quem possui o Pão [eucaristia], que vo-lo reparta. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - O Amor e a Graça, pag. 248</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Orar é uma necessidade tão vital como respirar, comer, dormir, exercer as faculdades corpóreas e espirituais. Digo precisamente vital. Quem larga mão da oração definha. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Novas Cartas sobre Oração, pag. 84</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Assim como o Pai sabe encontrar na sua alma todos aqueles que você ama, assim também ele vê, no coração imenso de seu Filho em oração, todos os homens pelos quais o Filho entregou sua vida. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Orar 15 dias com Henri Caffarel, pag. 80</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O Evangelho é a Voz, viva e permanente, de um vivente, de um grande Vivente, presente hoje no meio de nós. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Textos Escolhidos SRB 2009, pag. 24 (Carta Mensal, França janeiro 1964)</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Amem sua esposa, seu marido e desejem amá-la(o) mais a cada dia, porque não existe amor no coração que diga 'já é suficiente' nem que não deseje amar sempre mais e melhor. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Centelhas de sua Mensagem, pag. 94</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O vértice da pirâmide não é o indivíduo, mas sim o casal. E isso é algo de muito novo. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - O Carisma Fundador, pag. 20</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Posso fechar-me para este dom da vida divina, mas não me posso apartar de Deus. Ele está sempre presente, no âmago do meu ser. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Novas Cartas sobre Oração, pag. 08</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Um Movimento declina para a morte quando seus membros deixam a mentalidade de construtores para assumirem uma mentalidade de inquilinos!. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Centelhas de sua Mensagem, pag. 75</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Vocês sabem muito bem, há silêncios que são inimigos do amor. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhas do Amor, pag. 92</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Graças aos Estatutos, os equipistas são firmemente sustentados pelas obrigações. Mas cuidado com este novo perigo: esvaziar as obrigações de seu espírito. É preciso temer que as obrigações se tornem um fim em si mesmas, um ideal, uma limitação e que os equipistas pensem que a perfeição cristã consiste em respeitar as obrigações dos Estatutos. [...] Vamos formar cristãos ou produzir fariseus, em nossas Equipes? <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal dez/1959</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> E eis que, das profundezas do coração do Pai surge um ímpeto de poder infinito e incoercível, o Espírito Santo, Amor primordial. Ele invade o coração do Filho. Irrompe do coração do Filho. Invade o meu coração. E, na medida em que eu me abro para ele, transborda do meu coração e se espraia por sobre o mundo. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Novas Cartas sobre Oração, pag. 33</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Ao cristão que se dá, Cristo se entrega impetuosamente; a Cruz o diz bastante. A Eucaristia também. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - O Amor e a Graça, pág. 163</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Tu, que habitas no fundo de meu coração, quero o que tu queres, no fundo de meu coração. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Orar 15 dias com Henri Caffarel - pag. 106</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Apresentar o espetáculo de uma vida conjugal feliz e santa é proclamar, da forma mais convincente, a salvação que Cristo oferece ao mundo. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - O Amor e a Graça, pág. 168</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Um movimento vivo é um movimento que está em construção a cada dia, graças à ação de cada um de seus membros. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Centelhas de sua Mensagem, pag. 75</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Na verdade, orar é oferecer-me a Deus para que Ele tenha oportunidade para me recriar. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Novas Cartas sobre Oração, pag. 69</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O amor de Deus é a fonte inesgotável onde o amor humano pode ir sempre buscar graças de renovação. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 09</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Formamos Equipe, porque acreditamos que não basta aspirar à unidade total, de se comover pensando na reconciliação dos cristãos, de aguardar que um próximo concílio contribua para tanto, mas que cabe a nós fazer a unidade, realizar a unidade onde estiver ao nosso alcance, onde depende diretamente de nós. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal outubro 1961 - Profeta do Matrimônio, pag. 45</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> É importante que as riquezas do matrimônio sejam ensinadas aos cristãos e que estes se esforcem para delas viverem sempre mais plenamente. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - A Missão do Casal Cristão, pag. 43 (1959)</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Tu, que habitas no fundo de meu coração, louvado sejas tu, Senhor, no fundo de meu coração. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Orar 15 dias com Henri Caffarel, pag. 105</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Ser fiel nada mais será do que viver a vida inteira em estado de SIM. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Novas Cartas sobre Oração, pag. 62</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O amor chama o amor. Ser amado leva a amar. Surgem um deslumbramento, uma gratidão, uma generosidade, impaciente de se manifestar, cuja fonte não se sabia, mas estava dentro de si. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L'Anneau d'Or mai-ago 1964</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Perguntem-se se em sua equipe, assim como em seus lares, está presente o catolicismo da Igreja, viva, inspiradora, ou se o espírito sectário já não está a ponto de danificar os corações. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Centelhas de sua Mensagem, pag. 126</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O essencial de uma mensagem é abrir-nos um caminho para os sentimentos e os pensamentos íntimos de seu autor. É assim que ledes o Evangelho? <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - O Amor e a Graça, pag. 114</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Mesmo que vocês fossem os mais pobres, vocês teriam uma infinidade a entregar, pois o que aqueles que nos cercam precisam, em primeiro lugar, não são os nossos bens, mas nós mesmos. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal abril-maio 1957 - Profeta do Matrimônio, pag. 46</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Tudo é possível com muita paciência e principalmente muita fé naquele que jamais deixa sozinho quem luta pela vitória do amor. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 49</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Ensinar esposos a amar-se melhor, casais a auxiliarem-se mutuamente, vem a ser o mesmo que iniciá-los no amor de todos os homens, mesmo dos inimigos. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - A Missão do Casal Cristão, pag. 54 (Roma/1959)</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Um grupo é verdadeiramente católico quando se interessa, com interesse fraterno, por todas as raças e civilizações, por todos os ambientes sociais ainda alheios à doutrina de Cristo. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Centelhas de sua Mensagem, pag. 125</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Cada um de vós seja pleno de respeito pela caminhada daquele que ama rumo Àquele que quer ser o primeiro amado. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - O Amor e a Graça, pag. 166</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Quando o coração humano comete a imprudência de abrir-se para a caridade de Cristo, esta irresistivelmente o alarga para as dimensões da Igreja e do mundo. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - A Missão do Casal Cristão, pag. 54 (Roma/1959)</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> A única intenção verdadeira, a que corresponde à finalidade das Equipes, é a vontade de melhor conhecer Deus, melhor amá-lo, e melhor servi-lo. Entra-se nas Equipes para Deus, fica-se nelas por Deus. <i class="bi-end"></i></div>
+				<div class="fonte">Pe. Henri Caffarel - Carta Mensal dezembro 1962</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O acolhimento autêntico, longe de confiscar uma liberdade, longe de abafar uma personalidade, oferece-lhe ocasião de se afirmar. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - O Amor e a Graça, pag. 164</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Esse dever de se sentar que acabei de lhes apresentar nada mais é que um meio para conservar jovem e vivo seu amor e seu lar. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 93</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Formamos Equipe, porque queremos ser, em todo o lugar onde vivemos - prédio, quarteirão, parentela, paróquia... - operários de unidade e que temos de fazer o aprendizado dessa unidade com casais amigos e ser sustentados por eles no nosso esforço. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal outubro 1961 - Profeta do Matrimônio, pag. 45</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Durante breves momentos, o mais frequentemente possível, devemos parar para adorar a Deus no fundo do nosso coração, e saboreá-lo ainda que de passagem e como que furtivamente. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Orar 15 dias com Henri Caffarel, pag. 97</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Não temos dúvida de que é difícil realizar o ideal evangélico; mas, se o aceitarmos e aderirmos a ele de antemão, reconhecendo quão afastados estamos dele, desejando sinceramente ajustar a ele a nossa vida, então virá em nossa ajuda a graça do Senhor. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Centelhas de sua Mensagem, pag. 130</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Para se dar a conhecer, Deus assumiu o risco da palavra. Desta palavra infinitamente mais explícita e eloquente que qualquer outra: a encarnação de seu Verbo. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - A Missão do Casal Cristão, pag. 117 (maio/1970)</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Estou certo de pensar, ao abrir o Evangelho: alguém me fala. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Textos Escolhidos, pag. 24 (Carta Mensal janeiro 1964)</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Tu, que habitas no fundo de meu coração, eu te adoro, meu Deus, no fundo do meu coração. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Orar 15 dias com Henri Caffarel, pag. 105</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Que o amor permaneça desperto, alerta, vigilante, solicito. Que o seja mais ainda do que de costume. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal julho 1955 - Textos Escolhidos, pag. 71</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Assim como se sobe um rio até a fonte, assim o conhecimento do amor humano os levará a entrever o amor divino. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Palestra Brasil 1972 - Palestras e Conferências, pag. 45</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Jamais progredirei no amor ao outro se não mortificar o amor a mim mesmo, enquanto este for egoísta e reivindicativo. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Centelhas de sua Mensagem, pag. 93</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Não há necessidade de se procurar outra forma de avançar em direção ao Senhor: o casamento é um caminho sagrado, a família cristã é uma célula viva da Igreja. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - A Missão do Casal Cristão, pag. 49</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Que dois esposos, não apesar de seu amor, mas graças a ele, cheguem a esse estágio da vida conjugal em que, terna e pacientemente, se ajudam mutuamente a progredir no caminho de solidão que leva ao Senhor. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 98</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> A oração conjugal é um tempo forte do sacramento do matrimônio. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Orar 15 dias com Henri Caffarel, pag. 27</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> A ação não é somente suscitada pelo amor, ela é amor. Seu valor não reside só na perfeição da obra realizada, mas antes de tudo na qualidade do amor que a anima. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - 5 Encontros sobre a Oração Interior, pag. 79</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Esse rapaz cheira a porco, e vamos dar-lhe a mais bela túnica de nosso guarda-roupa. Isso não é razoável. Mas o amor não é razoável. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Livro Tema de Estudos ENS 2019, pag. 23 e 105</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Não é menos necessário para a cristandade fundar equipes de caridade: é outra maneira de tornar Cristo presente no meio dos homens. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Textos Escolhidos, pag. 55 (Carta Mensal novembro 1950)</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> A oferta de uma aliança não substitui o dom do coração e da vida: apenas o supõe. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Orar 15 dias com Henri Caffarel, pag. 86</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Amar é ser um, sem deixar de ser vários, cada um entregue a todos e todos entregues a um. É viver entre vários um único amor, uma só vida, uma só felicidade. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Centelhas de sua Mensagem, pag. 111</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Formamos Equipe, porque queremos que haja no mundo um reflexo a mais, modesto porém autêntico, da mais alta beleza, da mais alta santidade, do mais alto amor. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal outubro 1961 - Profeta do Matrimônio, pag. 45</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Que verdade impressionante, esta presença universal de Deus: no cosmos, nos outros, em nós mesmos!. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Novas Cartas sobre a Oração, pag. 12</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Recusar-se a Deus é recusar ao cônjuge seu pão cotidiano: o Amor. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Texto Base do MENS 2020, pag. 47</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Formamos Equipe, porque Jesus Cristo, no último dia, na última noite de sua vida, durante sua última conversa com os apóstolos, desvendou seu desejo mais secreto: 'Que todos sejam um'. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal outubro 1961 - Profeta do Matrimônio, pag. 44</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Formamos Equipe, porque cremos que Jesus Cristo continua no mundo, que Ele trabalha invisível, misteriosa e incansavelmente para conquistar, apreender, unir a si os seres humanos e as coisas para realizar a obra que o Pai lhe confiou. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal outubro 1961 - Profeta do Matrimônio, pag. 44</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> É muito importante compreender que o projeto do Senhor é um projeto que vê um conjunto e não apenas indivíduos justapostos. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Palestra Brasil 1972 - Palestras e Conferências, pag. 61</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> As graças do matrimônio serão estéreis sem a cooperação dos esposos. A fé que Cristo exige de nós não é uma simples efusão do coração, nem uma vaga adesão de princípio: é uma vontade de agir. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - O Amor e a Graça, pag. 62</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> No corpo de Cristo, preciso de Cristo, a Cabeça do Corpo, mas preciso também de todos os outros membros para viver, para agir e para orar. É um erro pensar: quero certamente depender de Cristo, mas não de meus irmãos cristãos. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - 5 Encontros sobre a Oração Interior, pag. 84</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Formamos Equipe, porque queremos que nossos irmãos saibam que Deus os ama, quer salvá-los e que será o espetáculo da nossa unidade, de nosso amor fraterno, que os levará a fazer essa descoberta. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal outubro 1961 - Profeta do Matrimônio, pag. 45</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> A união conjugal vale, em qualidade humana e em qualidade de eternidade, o que vale a união dos esposos com Deus. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L'Anneu d'Or, 1945 - Texto Base do MENS 2020, pag. 47</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Não há apóstolos mais verdadeiros, não há construtores do mundo e da Igreja mais autênticos do que os filhos de Pentecostes, aqueles que pela oração se abrem e se entregam à onipotente e doce força do Espírito Santo. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Centelhas de sua Mensagem, pag. 92</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Em quem ama existe como uma tensão, certa ansiedade, uma constante impaciência pela felicidade do outro. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 113</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Amar é identificar-se com alguém. O amor, em certo sentido, transforma uma pessoa na outra. Pelo amor, a pessoa se reveste da outra, nela se imerge. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Novas Cartas sobre a Oração, pag. 80</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Para ser justo aos olhos de Deus, não basta sujeitar-se a mandamentos, é preciso ter em si o Espírito Santo e a caridade que Ele difunde em nossos corações. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Textos Escolhidos, pag. 41 (Carta Mensal janeiro 1958)</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Ó Tu, que habitas no fundo de meu coração, eu me ofereço a ti, no fundo do meu coração. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Orar 15 dias com Henri Caffarel, pag. 105</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Um dos mais graves pecados contra o amor é a recusa de se explicar. E também um dos sinais mais manifestos do egoísmo. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - O Amor e a Graça, pag. 132</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Deus recorre a todos os seus filhos, meus irmãos, para se dizer e se dar a mim, para construir em mim o filho de Deus. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - 5 Encontros sobre a Oração Interior, pag. 85</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> É também próprio do amor aspirar à união com aquele que se ama - e à felicidade que essa união promete. Quando se trata de Deus, essa aspiração se chama esperança. Exercitem, pois, também a esperança. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal set/out 1970 - Profeta do Matrimônio, pag. 27</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Deixar-se amar, atrever-se a ser feliz sem restrições, eis portanto em que eu desejaria consistisse a sua oração. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Novas Cartas sobre a Oração, pag. 54</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Quando rezamos juntos [casal], formamos uma comunidade orante. Não há melhor base para o nosso casamento e a nossa família!. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - A Oração Conjugal - Texto Base do MENS 2020, pag. 100</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> É preciso notar bem que o Espírito Santo não foi dado a cada apóstolo isolado, estando um na rua, outro no templo, outro em sua própria casa. O Espírito Santo deu-se à equipe dos apóstolos. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Palestra Brasil 1972 - Palestras e Conferências, pag. 66</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Já nesta terra, a mais alta perfeição não é a da pessoa isolada, por mais perfeita que seja, mas sim a de uma comunidade de pessoas que se amam. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Centelhas de sua Mensagem, pag. 110</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O meio privilegiado para possuir uma fé viva é deixar-se penetrar pela Palavra de Deus, viva, criativa, recriadora. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal maio 1955 - Textos Escolhidos, pag. 20</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Como é perigoso revelar às pessoas seu mal, para dele libertá-las, sem antes lhes ter revelado que são amadas com um amor infinito. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 73</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> A pergunta que se apresenta não é, pois: é preciso falar de Deus? Mas sim: como falar de Deus sem o trair? <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - A Missão do Casal Cristão, pag. 117 (maio/1970)</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Que, juntos [o casal], escutem Cristo. Para escutar Cristo, podem começar a sua oração pela leitura da Bíblia para, em seguida, meditar. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal nov/1952 - Tema de Estudo MENS 2020, pag. 116</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> À tarde da Páscoa, Cristo aparece de repente no meio de seus apóstolos reunidos e, diz-nos o Evangelho, abriu-lhes o coração à compreensão das Escrituras. Peçamos essa mesma graça quando tomarmos nas mãos o nosso Evangelho. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - 5 Encontros sobre a Oração Interior - pág 13</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Não haverá verdadeiramente assembléia cristã, senão quando escutarem o Cristo presente. Amar-se é sem dúvida uma condição indispensável. Mas, amem-se para unir-se, e unam-se para ouvi-lo. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Palestras e Conferências (Palestras no Brasil),  pag. 29</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Sempre, todos os dias, o Pentecostes precede a atividade missionária. Esta é ineficaz sem aquele. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Centelhas de sua Mensagem, pag. 92</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> “Para amar como Ele [Jesus], é necessário que uns se ponham a serviço dos outros.”. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Centelhas de sua Mensagem, pag. 102</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> [A oração] é uma arte, como pintar, como tocar piano. E como em todas as artes, nós não podemos contentar-nos com aprender somente a teoria, precisamos de praticar para aprender. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Oração Conjugal, pag. 17</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> “Não se encontra nenhum sinal do amor no mármore da indiferença.”. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 47</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> “Seria bom que todos os participantes de uma reunião tivessem consciência de que estão reunidos para fazer progredir o reino de Deus.”. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Um homem arrebatado por Deus, pag. 84</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Para descobrir, é preciso procurar; para procurar, é preciso ter o desejo de encontrar; para desejar encontrar, é preciso que se creia que exista alguma coisa a encontrar. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal outubro 1954 - Texto Base do MENS 2020, pag. 155</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> “No teu amor por mim, vejo o amor de Deus que vem ao meu encontro; no meu amor por ti, uno-me ao amor de Deus, que pede o meu coração emprestado para te amar.”. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - A Missão do Casal Cristão, pag. 77</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Não há vitalidade cristã sem uma fé viva, constantemente alimentada por novas descobertas. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal outubro 1954 - Texto Base do MENS 2020, pag. 156</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Todo o seu dinamismo, quem lho comunica é Deus. Sem essa intervenção divina, nós não passaríamos de hóspedes inertes de um universo inerte. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Novas Cartas sobre a Oração, pag. 10</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> “Aquele que se guarda é que perde. Aquele que se dá, triunfa”. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Centelhas de sua Mensagem, pag. 110</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> A saúde espiritual reconhece-se por um sinal: pela fome de conhecimento de Deus, de seu pensamento, de sua palavra. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal outubro 1954 - Texto Base do MENS 2020, pag. 155</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> “Onde estão o amor e a caridade, ali está Deus presente.”. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Centelhas de sua Mensagem, pag. 31</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Não quero contentar-me em caminhar ao seu lado, quero viver em você, sofrer em você, amar em você e por você. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L'Anneau d'Or set/out 1967 - Boletim Amigos Pe Caffarel jan/2016, pag. 21</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> “Muita coisa vi, muita coisa aprendi e parto acreditando cada vez mais na missão das ENS no Brasil.”. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - ENS Ensaio sobre seu Histórico, pag. 124 (Nancy Moncau)</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O amor precisa de expressão, de troca, de comunicação. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal maio 1955 - Textos Escolhidos, pag. 20</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Mesmo que todos os outros lugares de culto estivessem fechados, impedidos, destruidos, como acontece em certas regiões do mundo, a família cristã permaneceria como a morada de Deus entre os homens. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - A Missão do Casal Cristão, pag. 115 (Boletim Amigos Pe Caffarel janeiro 2021, pag. 21)</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Quando a gente deixa instalar-se esta preocupação única, exclusiva, obsessiva de fazer e de sempre fazer melhor, perde aos poucos a aptidão para aquilo que a oração deveria ser acima de tudo: deixar-se amar por Deus. Marta se torna incapaz de ser Maria. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Novas Cartas sobre a Oração, pag. 54</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> No coração novo do cristão que vive de fato a sua fé crescem a fome e a sede de Deus, fome e sede de conhecê-lo, amá-lo e unir-se a Ele. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - 5 Encontros sobre a Oração Interior, pag. 64</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> A oração só é um caminho para a união perfeita com Deus se for fundada sobre uma fé alimentada pela meditação dos ensinamentos de Cristo e da Igreja. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Um homem arrebatado por Deus, pag. 178</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Uma Equipe de Nossa Senhora não é, apenas, um grupo de casais onde se pratica o amor fraterno, mas onde nós nos iniciamos nele. E é uma iniciação forte. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Centelhas de sua Mensagem, pag. 29 (Discurso em Lourdes em 07/06/1965)</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O cristianismo não é antes de tudo uma moral, não é culto do deus Dever, dessa divindade sem fisionomia: ele é uma religião, é uma vida com Deus, uma comunidade de amor com Ele. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - O Amor e a Graça, pag. 101</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Nenhum risco que esse lar [cristão] seja uma espécie de 'gueto' onde se procura fugir das angústias do mundo: nele se refazem as forças no amor mútuo, na oração e no repouso, mas para em seguida partir com impulso novo para as grandes tarefas humanas, como servidor do 'Deus amigo dos homens'. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - A Missão do Casal Cristão, pag. 115</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> É importante que os casais, uma vez ultrapassado o estágio da iniciação, se orientem deliberadamente rumo à perfeição evangélica, que tomem a sua cruz e se entreguem às exigências do amor, caminhando cada vez mais em direção à doação total. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - A Missão do Casal Cristão, pag. 65</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Temos tanta necessidade de estar contentes com nós mesmos, de poder nos aprovar a nós mesmos; ora, se abrirmos o Evangelho, somos obrigados a nos condenar. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal nov/1963 - Pe Caffarel Profeta do Matrimônio - SRB 2009, pag. 51</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Um verdadeiro cristão é um maravilhado. Mas não basta ter recebido os ensinamentos de Cristo. Precisa possuir também o Espírito de Cristo. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Palestra Brasil 1972 - Palestras e Conferências, pag. 66</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Eu procuro o teu rosto, um rosto, aquilo que, de uma pessoa, se volta para outra pessoa para um diálogo de amor. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Novas Cartas sobre a Oração, pag. 35</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Ser para aquele que se ama o pão cotidiano, eis o que Jesus Cristo quis ser para mim. Simplesmente pão, essa coisa comum e mais necessária. Eis até onde Ele se deu. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - O Amor e a Graça, pag. 163</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Quem não faz oração interior, vive uma relação aproximativa com Deus, como marido e mulher que nunca refletem nas exigências do amor mútuo e que improvisam continuamente. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Boletim Amigos Pe Caffarel jan/2017, pag.17</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O equilíbrio da nossa vida interior só é garantido na medida em que se alternam o fazer e o receber, a ação e a contemplação, a emissividade e a receptividade, o amor e o deixar-se amar. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Novas Cartas sobre a Oração, pag. 54</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Conheço homens e mulheres que, um belo dia, decidiram reagir. Pensaram a sua existência em função de sua vida cristã, e não o inverso. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal maio/1955 - Textos Escolhidos, pag. 21</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O amor cristão é autenticamente humano; ao mesmo tempo, é sobrenatural. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L'Anneau d'Or 2-3-4, pag. 04 - Texto Base do MENS 2021, pag. 28</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Se as Equipes de Nossa Senhora não forem um celeiro de homens e de mulheres prontos a assumir, corajosamente, todas as suas responsabilidades na Igreja e no mundo, perdem a sua razão de ser. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Um Homem Arrebatado por Deus, pag. 72</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Agradeço ao Senhor por ter suscitado entre vocês esses pioneiros que são Pedro e Nancy Moncau. Agradeço-lhe por lhes ter dado como Conselheiro Espiritual este padre de grande fé e generosidade incansável que é o Pe Corbeil. Sigam-nos, ajudem-nos, rezem por eles. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - janeiro/1958 - ENS Ensaio sobre seu Histórico, pag. 60</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O difícil não é viver com entusiasmo a juventude, mas, sim, com fidelidade a idade adulta e com fervor a velhice. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - julho 1957 - ENS Ensaio sobre seu Histórico, pag. 55</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> A vitória é minha, se eu não me canso de dar. Dupla vitória, aliás: perseguindo incessantemente a realização do ser que eu amo, eu avanço infalivelmente em direção à minha própria perfeição. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L'Anneau d'Or 27-28, pag. 193 - Texto Base do MENS 2021, pag. 40</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O cristianismo é essencialmente uma adesão pessoal a Cristo, o importante é realizar esta adesão. Isso será mais que uma apática fidelidade: será a vida mais apaixonante. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - O Amor e a Graça, pag. 157</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> A grande tarefa para os esposos cristãos, portanto, é, em primeiro lugar, tomar consciência de que o 'novo mandamento' lhes diz respeito, e, em segundo lugar, trabalhar para converter seu amor conjugal em caridade conjugal. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L'Anneau d'Or 125, pag. 384 - Texto Base do MENS 2021, pag. 43</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> A santidade de Cristo no século XX deveria explodir nos casamentos. A prova disto é que quando você quer se colocar sob o manto dos santos casados, você tem dificuldade em encontrar outra coisa que não sejam santos lendários. Cabe a vocês se tornarem esses santos!. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Por que as Equipes de Nossa Senhora? Exigências e Missão, 1949 - Texto Base do MENS 2021, pag. 30</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Abra sua inteligência pelo recolhimento, ou pela meditação de uma página do Evangelho, ou pela degustação de uma palavra do Senhor, e o pensamento de Deus penetrará e produzirá em sua inteligência frutos de luz. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Novas Cartas sobre a Oração, pag. 30</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Essa é a explicação do sentimento de solidão: essa aspiração à comunhão. É por isso que persiste enquanto não se consegue a comunhão, e desaparece tão logo ela é alcançada. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 96</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> “Para nós, orar é deixar que o Espírito fale em nós.”. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Um homem arrebatado por Deus, pag. 101</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Interceder é, na verdade, uma das grandes palavras no vocabulário da oração. É verdadeiramente uma altíssima função, dá testemunho de um grande amor a Deus e de um grande amor aos homens“. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L'Anneau d’Or 135/136, maio-agosto 1967 - Boletim Amigos do Pe Caffarel julho-agosto 2010, pag. 20</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Essa noção de fidelidade ao carisma fundador é capital, mas é preciso não confundir ser fiel com ser fixo. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - O Carisma Fundador, pag. 7 - Guia das ENS, pag. 141</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Todo cristão deveria amar, procurar no fundo do seu 'coração' o Cristo presente, vivo e orante. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - 5 Encontros sobre a Oração Interior, pag. 110</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> A oração equilibra a minha vida: ela faz as vezes da quilha que equilibra o barco e lhe permite manter a estabilidade contra os ventos e marés. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Novas Cartas sobre a Oração, pag. 87</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Não posso, absolutamente, contentar-me em transmitir-vos ideias prontas. As Equipes de Nossa Senhora devem ser continuamente reinventadas. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Palestra Brasil 1972 - Palestras e Conferências, pag. 57</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O lar cristão exerce uma função de 'mediação' entre a Igreja e o mundo. Como mediador, é o meio e o lugar do encontro entre Deus e os homens. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L'Anneau d’Or 104, pag. 96 - Livro Tema de Estudo ENS 2021, pag. 64</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O amor, como bem sabeis, propõe-se, mas jamais se impõe. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Novas Cartas sobre Oração, pag. 69</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Sob o impulso vitorioso da caridade, o lar se torna uma comunidade missionária. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L'Anneau d'Or 117-118, pag. 234 - Livro Tema de Estudo ENS 2021, pag. 91</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Para de nós se aproximar sem nos chocar, para que com Ele nos familiarizássemos, Ele nos revelou a sua glória, filtrada porém através de um rosto e de um sorriso de homem; comunicou-nos o fogo devorador de sua santidade, mas por meio de um coração de homem. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - A Missão do Casal Cristão, pag. 117 (maio/1970)</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O lar cristão é um 'retransmissor' no caminho da Igreja: ali, sem o saber, o que não crê faz pela primeira vez contato com a Igreja, o pecador experimenta a sua misericórdia, os pobres e os abandonados descobrem a sua maternidade. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L'Anneau d'Or 107, pag. 382 - Livro Tema de Estudo ENS 2021, pag. 67</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Porque vos cansais a perseguir Deus como se Ele estivesse fora de vós? Ele está em vós, no íntimo do vosso ser. Presente, vivo, afetuoso, ativo. Ali Ele vos chama. Ali vos espera para vos unirdes a Ele. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Cahiers sur l’Oraison 223, Jan/Fev 1989</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Entregar-se ao cônjuge, para os esposos cristãos, é entregar-se a Deus e, ao mesmo tempo, transmitir àquele que amamos as graças que recebemos de Deus para ele. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L’Anneau d’Or, n° 2-3-4, Julho 1945</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Pouco a pouco, de ano para ano, a ponta do nosso ser espiritual afinada pela graça tornar-se-á mais sensível à 'respiração de Deus' em nós, ao seu Espírito de amor. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Cahiers sur l’Oraison n° 223, Jan-Fev 1989</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O que, sob o impulso do Espírito, todos os intercessores pedem na sua pobre linguagem de homem na terra, será traduzido no Céu pelo Cristo glorioso, que está à direita do Pai. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Cahiers sur l’Oraison n° 38, Abril 1961</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Eis a intercessão mais autêntica: colocar-se em lugar de outra pessoa. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Novas Cartas sobre a Oração, pag. 81</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Examinemos de mais perto a vossa missão de testemunhas de Deus. A primeira maneira de lhe dar desempenho é viver sempre mais perfeitamente o vosso amor, fazer com que desenvolva todas as suas virtualidades, manifeste-se fiel, feliz, fecundo. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - A Missão do Casal Cristão, pag. 114 (maio/1970)</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O verdadeiro culto dos mortos não é conservar a tristeza nos corações. É fazer que a vida de nossos desaparecidos seja ainda fecunda sobre a terra e mais gloriosa no céu. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - O Amor e a Graça, pag. 214</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Se o lar cristão é uma célula da Igreja, se é parte interessada do mistério da Igreja, aqueles que lá vivem, assim como aqueles que lá chegam, devem ser capazes de encontrar e tirar dela a vida da Igreja. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L’Anneau d’Or 111-112, pag. 225 - Livro Tema de Estudo ENS 2021, pag. 113</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Orar em Cristo é necessariamente reunir-me nele à imensa multidão de todos os meus irmãos: os da terra, os do céu, os do purgatório. Assim sendo, quer eu o queira quer não, oro com essa multidão. E essa multidão, reunida em Cristo, tem um nome: Igreja. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - 5 Encontros sobre a Oração Interior, pag. 83</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Vocês devem trabalhar em sua santificação mútua: não se trata tanto de esforçar-se para 'fazer o bem' ao seu cônjuge, mas de ajudar um ao outro, de amar um ao outro, de amar seus filhos e de apoiar um ao outro no exercício da paternidade e maternidade. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L’Anneau d’Or 111-112, pag. 261 - Livro Tema de Estudo ENS 2021, pag. 44</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Penso em todos aqueles que são aguilhoados por uma vontade poderosa de luta contra a fome, a opressão, a morte; só podem afastar-se desses cristãos desinteressados pela causa sagrada do homem e que, dissimulados por trás de seu Deus, desertam a frente onde se trava o combate contra a injustiça. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - A Missão do Casal Cristão, pag. 112 - Roma 5/5/1970</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O casamento é uma obra de Deus, a obra-prima de Deus. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - O Carisma Fundador, pag. 14 - 03/05/1987</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Este mandamento maior, que substitui todos os outros é, acabastes de notá-lo, não 'amai', mas sim 'amai-vos'. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - A Missão do Casal Cristão, pag. 72</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Veja a pedagogia divina: Aquele do qual todos os seres têm necessidade, e que não precisa de ninguém, porque ama os seres humanos, quis precisar deles. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 81</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Há quem ache que já é alguma coisa estarmos reunidos ao redor de Cristo. Mais uma vez, digo que isso não é suficiente. Se a equipe dos apóstolos não tivesse conhecido o dia de Pentecostes, teria ficado mais ou menos estéril. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Palestra Brasil 1972 - Palestras e Conferências, pag. 70</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Comunhão, reciprocidade de consciências, dizem os filósofos, em que dois parceiros têm a convicção de serem um, e ao mesmo tempo de jamais terem vivido uma vida pessoal tão intensa. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 96</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> A vida da equipe requer muitas vezes que se sacrifiquem gostos, vontades, preferências pessoais. Voltar atrás perante a exigência, é diminuir no amor, é rejeitar o maior benefício que podemos esperar do time:  que nos faça morrer para nós mesmos. O homem que morre, Cristo surge. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal abr/mai 1957 - Profeta do Matrimônio, pag. 46</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> “A vida conjugal comporta grandes riquezas e também grandes exigências.”. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - O Carisma Fundador, pag. 15</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> “Na vida espiritual, quem não progride, recua.“. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - A Missão do Casal Cristão, pag. 63</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> “A oração interior não é menos necessária que a Eucaristia e a Palavra de Deus.”. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Um homem arrebatado por Deus, pag. 99</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> “O casamento é uma verdadeira vocação, que pode levar cada um dos cônjuges à santidade.”. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - O Carisma Fundador, pag. 34</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Abra a sua imaginação, esvaziando-a de tudo aquilo que a atravanca; com isso, é possível que este ou aquele modo de proceder de Cristo, este ou aquele aspecto de sua fisionomia lhe apareçam com inesperado relevo. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Novas Cartas sobre a Oração, pag. 31</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> A inapetência espiritual é doença muito comum entre os cristãos. Não tem fome e por isso pouco comem e o que comem pouco aproveitam. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal outubro 1954 - Livro Tema de Estudo ENS 2020, pag. 155</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Seria tempo de compreender que as Bem-aventuranças são o segredo dado por Deus aos homens para encontrarem não só o equilíbrio e a felicidade individual, mas também o equilíbrio e a paz do planeta inteiro. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - 5 Encontros sobre a Oração Interior, pag. 91</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Mediante sua mãe, Jesus santificava aqueles que encontrava, fazia exultar de alegria o Batista no seio de Isabel. O mesmo que Ele quer fazer através de nós. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Orar 15 dias com Henri Caffarel, pag. 74</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Verifiquei que falar de Deus é tão difícil! É preciso fazer mais, é preciso fazer melhor, é preciso convidar as pessoas a fazerem a experiência de Deus. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Boletim dos Amigos do Pe Caffarel n 22 (abril/2018), pag. 14</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> A personalidade humana chega a um estado onde, para alcançar a plenitude, é necessário entrar em comunhão com Deus. Deus já não é uma noção, já não é um ser do qual ouvimos falar, mas Alguém com quem nos encontramos e com quem se estabelece um diálogo, uma intimidade. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L'Anneau d'Or, n. 101 - Livro Tema de Estudo ENS 2022, pag. 30</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Da intimidade com Cristo, o fiel passa a ser arrebatado pelo próprio Cristo à intimidade com o Pai. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Novas Cartas sobre a Oração, pag. 57</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O olhar de Deus é um olhar criador. Para Deus, olhar e criar é um só e mesmo ato. O olhar de Deus não é o de um espectador, não se fixa sobre um ser já existente, mas introduz e situa um ser na existência. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - O Amor e a Graça, pag. 07 - Livro Tema de Estudo ENS 2022, pag. 31</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Muitas pessoas são levadas a pensar que se salvam pela observância das normas, quando o Evangelho nos diz que nos salvamos pela fé em Jesus Cristo. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - setembro 1972 - ENS Ensaio sobre seu Histórico (Nancy Moncau), pag. 123</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O que a realidade maravilhosa de nossa fé cristã ensina, é que este Deus, intimamente presente em todas as criaturas, embora delas distinto, é uma pessoa, um coração, um rosto, um olhar, e não uma força anônima e impessoal. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Novas Cartas sobre a Oração, pag. 10</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Amar é querer o desenvolvimento de um ser, é trabalhar nisso com afinco. É dar-lhe tudo o que se tem e tudo o que se é. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - O Amor e a Graça, pag. 151</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Ser competente é também amar a Deus. Porque Deus depositou nos homens a confiança de precisar da sua ajuda. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - O Amor e a Graça, pag. 146</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O cristão é um ser que deve sempre estar em marcha. No dia em que 'se instalar' tornar-se-á adorador de ídolos. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - julho 1957 - ENS Ensaio sobre seu Histórico (Nancy Moncau), pag. 55</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O amor é intransigente: ninguém pode servir a dois senhores, ninguém pode amar dois seres. Mas aquele que está unido ao único Mestre pode e deve, em Seu Nome, servir e amar todos os seres. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Les Equipes de Notre-dame à Roma et à Assise - 1976, pag. 67</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Ele [Jesus] não ora em mim sem mim. Para que a chama da lâmpada de azeite brilhe, o azeite tem de dar à chama a sua substância. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - 5 Encontros sobre a Oração Interior, pag. 43</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Eu não te peço que faças sempre mais, mas antes que sejas, sejas simplesmente tu, tal como és, que sejas 'Maria' e não esta 'Marta' sem cessar preocupada com fazer e sempre fazer. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Novas Cartas sobre a Oração, pag. 55</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> A oração do Espírito Santo não é uma simples brasa sob a cinza, mas uma chama que toma conta de todo o ser. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Orar 15 dias com Henri Caffarel, pag. 98</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Marido e mulher, vós que comeis a carne de Cristo, que bebeis o seu sangue, que viveis na vossa alma e no vosso corpo a vida de Cristo, que habitais nele, e Ele em vós, como não havíeis de vos amar um ao outro com um amor completamente diferente do dos outros homens, com um amor ressuscitado? <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - L’Anneau d’Or, n° 117-118 - Casamento, Caminho para Deus (Mai/Ago 1964)</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Há uma tendência em reduzir a vida cristã a normas de moral. Isto está na base do declínio de muitos movimentos e mesmo da Igreja. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - setembro 1972 - ENS Ensaio sobre seu histórico (Nancy Moncau), pag. 123</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Para os esposos que querem amar, que querem aprender a amar cada vez mais, há um único e bom conselho: procurem Deus, amem Deus, sejam unidos a Deus, deixem-lhe todo o espaço. <i class="bi-end"></i></div>
+				<div class="fonte">Pe. Henri Caffarel - L'Anneau d'Or n. 35 set-out 1950</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> É possível santificar-se no estado do matrimônio e pelo estado do matrimônio. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Centelhas de sua Mensagem, pag. 52</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Onde falta oração tudo morre, onde há oração tudo renasce, tudo amadurece. <i class="bi-end"></i></div>
+				<div class="fonte">Pe. Henri Caffarel - Carta Mensal 499, pag. 32 (05/05/1970)</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O grupo que exclua de seu pensamento, de seu amor, de sua oração, esse ambiente, essa raça, essa civilização, não mereceria seu título de católico. <i class="bi-end"></i></div>
+				<div class="fonte">Pe. Henri Caffarel - Centelhas de sua Mensagem, pag. 126</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Unidade entre marido e mulher, unidade entre pais e filhos, unidade entre casais no seio da equipe, unidade das equipes no seio do Movimento supranacional, tudo porque aspiramos, com toda a energia de nossa caridade, à unidade de todos os seres em Cristo. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal outubro 1961 - Profeta do Matrimônio, pag. 45</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Do mesmo modo que um aperto de mão só é um gesto de amor se por ele damos nosso coração, o trabalho só é oração na medida em que a vontade o orienta para Deus como um oferenda. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - O Amor mais forte que a morte, pag. 121 (Carta Mensal 477, pag. 41)</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> A oração verdadeira orienta infalivelmente o cristão para a ação. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - 5 Encontros sobre a Oração Interior, pag. 75</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Cuidado com as trapaças do espírito e do coração. Sejam verdadeiros filhos de Deus, fazendo-lhe o favor de acreditar que não pede coisas não razoáveis. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 119</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Dois amores significavam, para eles [casais], sua força, sua alegria, seu prazer de viver: o amor de Cristo e o amor conjugal. <i class="bi-end"></i></div>
+				<div class="fonte">Pe. Henri Caffarel - Centelhas de sua Mensagem, pag. 32</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> É frequente nas famílias em que a Bíblia tem um lugar de destaque ter-se noção da providência de Deus. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Livro Tema de Estudo ENS 2022, pag. 137 (A Virtude do Abandono)</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Eu Sou, esse o nome com que Deus se apresenta a Moisés, está aqui, sempre atento. Eu Sou significa estou aqui: sou para você, estou agora presente a você, amando você tal como você é. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 63</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Por pouco que a Bíblia nos seja familiar, esta verdade é lá expressa de forma absolutamente indiscutível: Deus governa o universo que criou. Nada escapa à sua atenção, nada escapa ao seu cuidado. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Livro Tema de Estudo ENS 2022, pag. 136 (A Virtude do Abandono)</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Entre o cristão e o Cristo, o amor, como todo o amor, é de início impulso e desejo, tendendo porém à sua perfeição, ao repouso, na intimidade, com o ser amado. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Presença de Deus 100 Cartas sobre a Oração, pag. 200</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Para caminharmos nas estradas da terra, o Senhor deu-nos duas pernas. Para caminharmos nas estradas da santidade, o Senhor deu-nos dois meios: o amor e a abnegação. <i class="bi-end"></i></div>
+				<div class="fonte">Pe. Henri Caffarel - Guia das ENS, pag. 149</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Viver é amar, dar, dar-se. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Nas Encruzilhadas do Amor, pag. 119</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O grande beneficio da oração é despertar o nosso desejo de felicidade se está adormecido, intensificá-lo se já está vivo. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel -  Presença de Deus, 100 Cartas sobre a Oração, pag. 140</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Fazer conhecer Deus, proclamar seu amor, eis o primeiro aspecto da missão apostólica do casal. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Palestras e Conferências (Palestras no Brasil),  pag. 37</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Quem não vai para frente, recua; E o amor nunca descansa. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel, Um homem arrebatado por Deus, pag. 86</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Um santo não é antes de tudo, como muitos o imaginam, uma espécie de campeão que faz proezas no terreno das virtudes, que bate recordes espirituais. É em primeiro lugar um homem seduzido por Deus. E que entrega a Deus sua vida inteira. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Carta Mensal dezembro 1963, pag. 01</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> As Equipes de Nossa Senhora tem por objetivo essencial ajudar os casais a tender à santidade. Nada mais, nada menos. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Guia das ENS ed. 2018, pag. 16</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O que absorve o espírito não distrai necessariamente o coração. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - O Amor mais forte que a morte, pag. 121 (Carta Mensal 477, pag. 41)</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O abandono é a resposta do nosso amor aos avanços do Amor divino, que, aos poucos, vamos aprendendo a decifrar, através dos acontecimentos. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Livro Tema de Estudo ENS 2022, pag. 144 (A Virtude do Abandono)</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> O momento presente é o único lugar onde podemos encontrar Deus. O momento presente é o único lugar de encontro com Deus. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Livro Tema de Estudo ENS 2022, pag. 144 (A Virtude do Abandono)</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Que a Virgem Maria, a quem todas as noites rezamos juntos, obtenha para todos os equipistas a graça das graças: a de serem humildes, ou, em termos mais bíblicos, de terem 'almas de pobres'. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Palestra do Pe Caffarel em São Paulo em 1962 sobre os Estatutos (site equipes-notre-dame.com)</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> A propósito do amor conjugal, dizia-lhe eu que ele declina quando os esposos renunciam ir, cada dia, à descoberta um do outro. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Presença de Deus 100 Cartas sobre a Oração, pag. 67</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Abra-se, pois, à esperança! Mas saiba que esperança não é passividade. Traduz-se pelo esforço. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - Presença de Deus 100 Cartas sobre a Oração, pag. 147</div>
+			</div></div>
+						<div class="border"><div>
+				<div class="quote"><i class="bi-quote"></i> Que cada um se esforce por descobrir o rosto de filho de Deus do seu cônjuge; procure encontrar, para lá das qualidades ou defeitos aparentes, a alma em busca do Senhor, as suas tentativas e os seus insucessos e, mais profundamente ainda, o Deus que habita esta alma. <i class="bi-end"></i></div>
+				<div class="fonte">Pe Henri Caffarel - A Missão do Casal Cristão, pag. 78</div>
+			</div></div>
+				</div>
+
+      
+      </div>
+  </div>
+</div>
+
         
     </div>
 </div>
 
 
 
-<script src="../aos.js"></script><script>AOS.init({ duration:800 });</script>
 
-<script language="javascript">
-    $(document).ready(function(){
-        $('.cep').mask('00.000-000');
-        $('.phone').mask('(00) 9 0000-0000');
-    });
-</script>
+
+<script src="../aos.js"></script><script>AOS.init({ duration:800 });</script>
 
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         var form = document.getElementById('form');
-
         form.addEventListener('submit', function(event) {
             // Verifica se todos os campos obrigatórios estão preenchidos
             if (!form.checkValidity()) {
@@ -142,6 +1625,33 @@
         }, false);
     });
 </script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="text/javascript">
+$(function() {
+	$('#citacoes form').submit(function(){
+		var q = $('#citacoes form input').val();
+		if (q.length > 3) {
+			$('.quote').parents('.border').hide();
+			$('.quote:contains("'+q+'")').parents('.border').show();
+		}
+		else {
+			Swal.fire({
+				title: '',
+				text: 'Informe no mínimo 3 caracteres',
+				icon: 'error',
+				showCancelButton: false,
+				confirmButtonColor: '#3085d6',
+				confirmButtonText: 'OK'
+			})
+		}
+		return false;
+	});
+});
+</script>
+
+
 
 </body>
 </html>
