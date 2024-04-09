@@ -19,16 +19,6 @@
 <link rel="stylesheet" href="../css/aos.css">
 <script src="../js/jquery.min.js"></script>
 <style>
-#loader {display:none; align-items:center; width:100vw; height:100vh; background-color:#333; position:fixed; z-index:99999}
-.loader {width:50px; height:50px; border-radius:50%; animation:rotate 1s linear infinite; margin-left:43%; margin-top:60%; display:flex}
-.loader::before {content: ""; box-sizing:border-box; position:absolute; inset:0px; border-radius:50%; border:5px solid #FFF; animation:prixClipFix 2s linear infinite;}
-@keyframes rotate {100%  {transform: rotate(360deg)}}
-@keyframes prixClipFix {0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
-        25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
-        50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
-        75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
-        100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}}
-
 .lbl-toggle{margin:15px 7px 0 7px; padding:0.9rem 1.4rem 0 1.4rem}
 .lbl-toggle h4{margin-bottom:-6px}
 .collapsible-content{margin:0 7px 25px 7px}
