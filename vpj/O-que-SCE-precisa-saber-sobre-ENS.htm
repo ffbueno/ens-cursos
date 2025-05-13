@@ -307,6 +307,7 @@ $(".modal-window").click(function() {
             contentType: false,
             cache: false,
             processData: false,
+            dataType: "json",
         }).done(function(retorno) {
             var dados = JSON.parse(retorno);
 
