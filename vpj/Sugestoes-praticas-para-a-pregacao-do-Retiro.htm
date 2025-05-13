@@ -61,8 +61,8 @@ input[type='checkbox'] {display:none;}
     </div>
     <div id="aba" align="center">ÁUDIO</div>
 <style>
-#tts{font-size:1.02rem; background-color:#bacff0; border-radius:0 0 17px 0; padding:15px 7px 0 7px; width:90%; margin-left:3%; margin-top:-89px; transition:margin-top 0.3s ease; } 
-#aba{font-size:1rem; font-weight:bold; background-color:#bacff0; border-radius:0 0 12px 12px; padding:9px; width:60px; margin-left:3%; cursor:pointer;} 
+#tts{font-size:1.02rem; background-color:#bacff0; border-radius:0 0 17px 0; padding:15px 7px 0 7px; width:90%; margin-left:3%; margin-top:-87px; transition:margin-top 0.3s ease; } 
+#aba{font-size:1rem; font-weight:bold; background-color:#bacff0; border-radius:0 0 12px 12px; padding:11px; width:60px; margin-left:3%; cursor:pointer;} 
 #tts div{display:flex;align-items:center; align-items:center; justify-content:center} #tts div span,#tts div input{margin:0 3px} 
 #tts button{height:30px;line-height:30px; background-color:#1a4798; padding:0 13px; font-size:1.2rem; font-weight:400; margin-left:9px}</style>
 <script>
@@ -166,8 +166,8 @@ window.addEventListener("beforeunload", () => {  speechSynthesis.cancel(); });
         // Adicionando o evento de clique
         abaElement.addEventListener('click', function() {
             if (isMarginZero) {
-                // Se o margin já estiver em 0, alterar para -89px
-                ttsElement.style.marginTop = '-89px';
+                // Se o margin já estiver em 0, alterar para -87px
+                ttsElement.style.marginTop = '-87px';
             } else {
                 // Se não estiver em 0, alterar para 0
                 ttsElement.style.marginTop = '0';  }
