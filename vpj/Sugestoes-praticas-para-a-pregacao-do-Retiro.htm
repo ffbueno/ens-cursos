@@ -33,13 +33,13 @@ input[type='checkbox'] {display:none;}
 .modal-window {position:fixed; background-color: rgba(255, 255, 255, 0.8); top:0; right:0; bottom:0; left:0; z-index:999999; visibility:visible; opacity:1; pointer-events:all; -webkit-transition: all 0.3s; transition: all 0.2s}
 .modal-window:target { visibility:visible; opacity: 1; pointer-events: auto;}
 .modal-window > div {max-width:250px; width:100%; padding:22px; position:absolute; top:40%; left:50%; -webkit-transform:translate(-50%, -50%);transform: translate(-50%, -50%); padding:2em; background:#ffffff; -webkit-box-shadow: 0px 0px 90px 0px rgba(0,0,0,0.26); -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.26); box-shadow: 0px 0px 90px 0px rgba(0,0,0,0.26); border-radius:6px}
-.modal-window div:not(:last-of-type) { margin-bottom: 15px;}
+.modal-window div:not(:last-of-type) {margin-bottom:15px;}
 </style>
 </head>
 <body>
 
 
-<div id="login" class="modal-window" data-aos="fade-up">
+<div id="login" class="modal-window" data-aos="fade-up" style="display:none">
     <div class="total" align="center">
         <h4 style="margin:20px 0"><img src="../img/ens-logo.svg" style="width:60px;margin:20px 10px -17px auto"><b>acessar cursos</b></h4>
         <form action="" name="formCadastro" id="formCadastro" method="post" enctype="multipart/form-data" autocomplete="off" accept-charset="UTF-8">
@@ -55,11 +55,133 @@ input[type='checkbox'] {display:none;}
 
 <div id="conteudo" style="display:none">
 
+    <div id="tts">
+        <div><span>VOZ</span> <select id="vozSelect" style="margin-bottom:0.6rem;height:auto;"></select></div>
+        <div><span>VELOCIDADE</span><input type="range" id="velocidade" min="0.5" max="2" step="0.1" value="1" style="width:100px"><span id="velocidadeValor">1.0x</span> <button id="btnFalar">🔊 Ler</button> <button id="btnParar" style="display:none;">⏸️ Pausar</button></div>
+    </div>
+    <div id="aba" align="center">ÁUDIO</div>
+<style>
+#tts{font-size:1.02rem; background-color:#bacff0; border-radius:0 0 17px 0; padding:15px 7px 0 7px; width:90%; margin-left:3%; margin-top:-89px; transition:margin-top 0.3s ease; } 
+#aba{font-size:1rem; font-weight:bold; background-color:#bacff0; border-radius:0 0 12px 12px; padding:9px; width:60px; margin-left:3%; cursor:pointer;} 
+#tts div{display:flex;align-items:center; align-items:center; justify-content:center} #tts div span,#tts div input{margin:0 3px} 
+#tts button{height:30px;line-height:30px; background-color:#1a4798; padding:0 13px; font-size:1.2rem; font-weight:400; margin-left:9px}</style>
+<script>
+let vozesDisponiveis = [];
+let utterance;
+let isSpeaking = false;
+let vozSelecionada = null;
+let velocidade = 1;
 
-<div class="container-fluid" style="padding-bottom:100px">
+// Aguarda até que as vozes estejam carregadas (especialmente no Firefox)
+function esperarVozesDisponiveis(callback) {
+    let tentativas = 0;
+    const intervalo = setInterval(() => {
+        vozesDisponiveis = speechSynthesis.getVoices();
+        if (vozesDisponiveis.length !== 0 || tentativas > 10) { clearInterval(intervalo); callback();  }
+        tentativas++;
+    }, 200);
+}
+
+// Carrega vozes no seletor
+function carregarVozes() {
+    const select = document.getElementById('vozSelect');
+    select.innerHTML = '';
+
+    vozesDisponiveis.forEach((voz, index) => {
+        const option = document.createElement('option');
+        option.value = index;
+        option.textContent = `${voz.name} (${voz.lang})`;
+        select.appendChild(option);
+    });
+
+    if (vozesDisponiveis.length > 0) { vozSelecionada = vozesDisponiveis[0];  }
+}
+
+// Chamada inicial para garantir carregamento
+esperarVozesDisponiveis(() => { carregarVozes(); });
+
+// Atualiza se as vozes mudarem
+speechSynthesis.onvoiceschanged = () => {esperarVozesDisponiveis(carregarVozes); };
+
+
+// Inicia fala
+function falarTexto() {
+    if (isSpeaking) return;
+
+    const texto = document.getElementById('ttscont').textContent;
+    utterance = new SpeechSynthesisUtterance(texto);
+    utterance.voice = vozSelecionada;
+    utterance.rate = velocidade;
+    utterance.onend = () => { isSpeaking = false; toggleBotoes();};
+    speechSynthesis.speak(utterance);
+    isSpeaking = true;
+    toggleBotoes();
+}
+
+// Pausar/continuar
+function pausarOuContinuar() {
+    if (speechSynthesis.speaking && !speechSynthesis.paused) {
+        speechSynthesis.pause(); document.getElementById('btnParar').textContent = '▶️ Continuar';
+    } else {
+        speechSynthesis.resume(); document.getElementById('btnParar').textContent = '⏸️ Pausar';
+    }
+}
+
+// Ajuste de velocidade
+document.getElementById('velocidade').addEventListener('input', function () {
+    velocidade = parseFloat(this.value);
+    document.getElementById('velocidadeValor').textContent = velocidade;
+    if (isSpeaking) {  speechSynthesis.cancel(); isSpeaking = false; falarTexto(); }
+});
+
+// Seleção de voz
+document.getElementById('vozSelect').addEventListener('change', function () {
+    const index = parseInt(this.value);
+    vozSelecionada = vozesDisponiveis[index];
+    if (isSpeaking) { speechSynthesis.cancel(); isSpeaking = false; falarTexto(); }
+});
+
+// Botões
+document.getElementById('btnFalar').addEventListener('click', falarTexto);
+document.getElementById('btnParar').addEventListener('click', pausarOuContinuar);
+
+// Atualiza botões
+function toggleBotoes() {
+    const falando = speechSynthesis.speaking && !speechSynthesis.paused;
+    document.getElementById('btnFalar').style.display = falando ? 'none' : 'inline-block';
+    document.getElementById('btnParar').style.display = falando || speechSynthesis.paused ? 'inline-block' : 'none';
+    document.getElementById('btnParar').textContent = '⏸️ Pausar';
+}
+
+// Parar ao sair da página
+window.addEventListener("beforeunload", () => {  speechSynthesis.cancel(); });
+
+        // Selecionando os elementos pelo ID
+        const abaElement = document.getElementById('aba');
+        const ttsElement = document.getElementById('tts');
+        
+        // Variável para controlar o estado atual
+        let isMarginZero = false;
+        
+        // Adicionando o evento de clique
+        abaElement.addEventListener('click', function() {
+            if (isMarginZero) {
+                // Se o margin já estiver em 0, alterar para -89px
+                ttsElement.style.marginTop = '-89px';
+            } else {
+                // Se não estiver em 0, alterar para 0
+                ttsElement.style.marginTop = '0';  }
+            
+            // Inverter o estado para o próximo clique
+            isMarginZero = !isMarginZero;
+        });
+</script>
+
+
+
+<div class="container-fluid" style="padding-bottom:100px" id="ttscont">
     <div class="row">
         <div class="twelve columns" align="center" style="padding:0 20px">
-            <button onclick="lerTexto()">🔊 Ler Texto</button>
             <img src="../img/ens-logo.svg" style="width:80px;margin:40px auto -15px auto" data-aos="fade-up"><h2 data-aos="fade-down"><b>Curso</b> Sugestões Práticas para a Pregação do Retiro</h2>
         </div>
     </div>
@@ -182,7 +304,7 @@ observações a serem consideradas:</p>
 
 
 
-<script src="/aos.js"></script><script>AOS.init({ duration:800 });</script>
+<script src="../aos.js"></script><script>AOS.init({ duration:800 });</script>
 
 
 <script>
@@ -293,18 +415,10 @@ $(function () {
 });
 </script>
 
-<script>
-function lerTexto() {
-    const texto = document.getElementById("conteudo").innerText;
-    const synth = window.speechSynthesis;
-    const utterance = new SpeechSynthesisUtterance(texto);
-    
-    // Opcional: configurar voz, idioma, velocidade, etc.
-    utterance.lang = 'pt-BR'; // Português do Brasil
-    utterance.rate = 1; // Velocidade (1 = normal)
 
-    synth.speak(utterance);
-}
-</script>
+
+
+
+
 </body>
 </html>
