@@ -219,83 +219,90 @@ input[type='checkbox'] {display:none;}
 
 
 
-<script src="https://cursos.ensbr.com/aos.js"></script><script>AOS.init({ duration:800 });</script>
+<script src="/aos.js"></script><script>AOS.init({ duration:800 });</script>
 
+<script>
+// Validação de CPF
+function validacpf() {
+    const cpfInput = document.getElementById('cpf');
+    const cpf = cpfInput.value.replace(/\D/g, ''); // Remove não-dígitos
 
-
-<script language="javascript">
-function validacpf(){
-if(valida_cpf(document.getElementById('cpf').value))
-	return true;//alert('CPF válido');
-else
-	alert('CPF inválido, digite-o corretamente'); cpf.value = "";
-	}
-			
-function valida_cpf(cpf){
-  var numeros, digitos, soma, i, resultado, digitos_iguais;
-  digitos_iguais = 1;
-  if (cpf.length < 11)
-		return false;
-  for (i = 0; i < cpf.length - 1; i++)
-	if (cpf.charAt(i) != cpf.charAt(i + 1))
- {
- digitos_iguais = 0;
- break;
- }
-  if (!digitos_iguais)
-		{
-		numeros = cpf.substring(0,9);
-		digitos = cpf.substring(9);
-		soma = 0;
-		for (i = 10; i > 1; i--)
- soma += numeros.charAt(10 - i) * i;
-		resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
-		if (resultado != digitos.charAt(0))
-		return false;
-		numeros = cpf.substring(0,10);
-		soma = 0;
-		for (i = 11; i > 1; i--)
- soma += numeros.charAt(11 - i) * i;
-		resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
-		if (resultado != digitos.charAt(1))
+    if (valida_cpf(cpf)) {
+        return true;
+    } else {
+        alert('CPF inválido. Digite-o corretamente.');
+        cpfInput.value = "";
+        cpfInput.focus();
         return false;
-		return true;
-		}
-  else
-		return false;
+    }
+}
+
+function valida_cpf(cpf) {
+    var numeros, digitos, soma, i, resultado, digitos_iguais;
+    digitos_iguais = 1;
+    if (cpf.length < 11) return false;
+
+    for (i = 0; i < cpf.length - 1; i++) {
+        if (cpf.charAt(i) != cpf.charAt(i + 1)) {
+            digitos_iguais = 0;
+            break;
+        }
+    }
+
+    if (!digitos_iguais) {
+        numeros = cpf.substring(0, 9);
+        digitos = cpf.substring(9);
+        soma = 0;
+
+        for (i = 10; i > 1; i--)
+            soma += numeros.charAt(10 - i) * i;
+
+        resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
+        if (resultado != digitos.charAt(0)) return false;
+
+        numeros = cpf.substring(0, 10);
+        soma = 0;
+
+        for (i = 11; i > 1; i--)
+            soma += numeros.charAt(11 - i) * i;
+
+        resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
+        if (resultado != digitos.charAt(1)) return false;
+
+        return true;
+    }
+
+    return false;
 }
 </script>
 
-
-
-
 <script>
-$(function() {
-if (localStorage.getItem("cpf") == "true") {
-    $("#login").hide();
-    $("#conteudo").show();
-}
-else {
-    $("#conteudo").hide();
-    $("#login").show();
-}
+$(function () {
+    if (localStorage.getItem("cpf") === "true") {
+        $("#login").hide();
+        $("#conteudo").show();
+    } else {
+        $("#conteudo").hide();
+        $("#login").show();
+    }
 
-$(".modal-window").click(function() {
-        if (localStorage.getItem("cpf") == "true") {
+    $(".modal-window").click(function () {
+        if (localStorage.getItem("cpf") === "true") {
             $("#login").hide();
             $("#conteudo").show();
-        }
-        else {
+        } else {
             $("#conteudo").hide();
             $("#login").show();
         }
     });
-});
-</script>
 
-<script>
-    $("#formCadastro").on("submit", function(event){
+    $("#formCadastro").on("submit", function (event) {
         event.preventDefault();
+
+        // Validação do CPF antes do envio
+        if (!validacpf()) {
+            return false;
+        }
 
         var form = $('#formCadastro')[0];
         var data = new FormData(form);
@@ -308,18 +315,18 @@ $(".modal-window").click(function() {
             cache: false,
             processData: false,
             dataType: "json",
-        }).done(function(retorno) {
-            // Não precisa de JSON.parse aqui!
+        }).done(function (retorno) {
             if (retorno.sucesso === true) {
                 localStorage.setItem("cpf", true);
                 document.location.reload(true);
             } else {
                 alert(retorno.msg);
             }
-        }).fail(function(jqXHR, textStatus, msg) {
+        }).fail(function (jqXHR, textStatus, msg) {
             alert("Erro na requisição: " + msg);
         });
     });
+});
 </script>
 
 
