@@ -293,7 +293,7 @@ $(".modal-window").click(function() {
 });
 </script>
 
-<script type="text/javascript">
+<script>
     $("#formCadastro").on("submit", function(event){
         event.preventDefault();
 
@@ -309,20 +309,19 @@ $(".modal-window").click(function() {
             processData: false,
             dataType: "json",
         }).done(function(retorno) {
-            var dados = JSON.parse(retorno);
-
-            if (dados.sucesso == true) {
+            // Não precisa de JSON.parse aqui!
+            if (retorno.sucesso === true) {
                 localStorage.setItem("cpf", true);
-
                 document.location.reload(true);
             } else {
-                alert(dados.msg);
+                alert(retorno.msg);
             }
         }).fail(function(jqXHR, textStatus, msg) {
-            alert(msg);
+            alert("Erro na requisição: " + msg);
         });
     });
 </script>
+
 
 </body>
 </html>
