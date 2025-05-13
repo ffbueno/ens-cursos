@@ -59,6 +59,7 @@ input[type='checkbox'] {display:none;}
 <div class="container-fluid" style="padding-bottom:100px">
     <div class="row">
         <div class="twelve columns" align="center" style="padding:0 20px">
+            <button onclick="lerTexto()">🔊 Ler Texto</button>
             <img src="../img/ens-logo.svg" style="width:80px;margin:40px auto -15px auto" data-aos="fade-up"><h2 data-aos="fade-down"><b>Curso</b> Sugestões Práticas para a Pregação do Retiro</h2>
         </div>
     </div>
@@ -292,6 +293,18 @@ $(function () {
 });
 </script>
 
+<script>
+function lerTexto() {
+    const texto = document.getElementById("conteudo").innerText;
+    const synth = window.speechSynthesis;
+    const utterance = new SpeechSynthesisUtterance(texto);
+    
+    // Opcional: configurar voz, idioma, velocidade, etc.
+    utterance.lang = 'pt-BR'; // Português do Brasil
+    utterance.rate = 1; // Velocidade (1 = normal)
 
+    synth.speak(utterance);
+}
+</script>
 </body>
 </html>
